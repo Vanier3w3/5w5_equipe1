@@ -1,16 +1,12 @@
 .main-navigation {
 	display: block;
 	width: 100%;
-	text-decoration: none;
-	
+
 	ul {
 		display: none;
+		list-style: none;
 		margin: 0;
 		padding-left: 0;
-		list-style: none;
-        text-decoration: none;
-        justify-content: space-around;
-        padding-top:400px;
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -50,13 +46,13 @@
 				color: white;
 			}
 
-			/*:hover > a,
+			:hover > a,
 			.focus > a {
 			}
 
 			a:hover,
 			a.focus {
-			}*/
+			}
 		}
 
 		li:hover > ul,
@@ -68,22 +64,24 @@
 	li {
 		position: relative;
 
-		/*&:hover > a,
+		&:hover > a,
 		&.focus > a {
-		}*/
+		}
 	}
 
 	a {
 		display: block;
 		text-decoration: none;
-		
+		justify-content: space-between;
+		margin: 20px;
+		color: white;
 	}
 
-	/*.current_page_item > a,
+	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
-	}*/
+	}
 }
 
 /* Small menu. */
@@ -126,41 +124,21 @@
 }
 
 
-/////////////////////// MON CODE NAV ET TITRE /////////////////////////////
-   
-.main-navigation ul
-{
-	list-style:none;
-	text-decoration:none;
-	padding-top:100px;
-	//justify-content:space-around;
-	margin-left:20px;
-	margin-right: 20px;
-	padding-left: 330px;
-	padding-right: 330px;
-	padding-top: 220px;
+.site-title h1 {
+	margin: 0 auto;
+	color: white;
+	font-size:3em;
+	font-family: ethnocentric;
+	list-style: none;
 }
 
-.site-title a
-{
-	display:flex;
-	text-decoration:none;
-	justify-content:center;
-	margin-top:330px;
-	font-size:3.2em;
-
+h1 a{
+text-decoration: none;
 }
 
-
-	  
-.fleche{
-margin-left: 48%;
-
-   }
-
-   
-   .logoM9{
-	  background-image: url(logoMaisonneuve.jpeg);
-	 
-
-   }
+.main-navigation ul{
+	list-style: none;
+	text-decoration: none;
+	justify-content: space-around;
+	padding-top:400px;
+}

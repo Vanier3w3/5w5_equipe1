@@ -12,12 +12,9 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-<div>
 	<!--	<div class="site-info">
 		
 		</div>--><!-- .site-info -->
-
-		<img class="logoM9" > </img>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
