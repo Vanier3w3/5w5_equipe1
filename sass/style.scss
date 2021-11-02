@@ -104,4 +104,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /* navigation
 --------------------------------------------- */
-@import "utilities/navigation";
+@import "components/navigation/navigation";
+
+/* importation de acceuil
+--------------------------------------------- */
+@import "local/acceuil";
+
+/* importation du header
+--------------------------------------------- */
+@import "local/header";

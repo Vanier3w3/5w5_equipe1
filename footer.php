@@ -11,11 +11,12 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-	<!--	<div class="site-info">
-		
-		</div>--><!-- .site-info -->
-	</footer><!-- #colophon -->
+	<!--<footer id="colophon" class="site-footer" style="background-image: url('backG_fondu.png'); width:100%; height:200px; padding-top:20px" >
+
+	<div class="site-info">
+	
+	</div>
+	</footer>--><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
