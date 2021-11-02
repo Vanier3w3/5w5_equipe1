@@ -1,7 +1,8 @@
 .main-navigation {
-	display: block;
-	width: 100%;
-
+	display: flex;
+	width: 100vw;
+	justify-content: center;
+	margin: 0;
 	ul {
 		display: none;
 		list-style: none;
@@ -98,6 +99,7 @@
 
 	.main-navigation ul {
 		display: flex;
+		width: 60%;
 	}
 }
 
@@ -141,4 +143,9 @@ text-decoration: none;
 	text-decoration: none;
 	justify-content: space-around;
 	padding-top:400px;
+}
+
+.nav-menu {
+	margin: 0;
+
 }
