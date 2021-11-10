@@ -1,0 +1,53 @@
+.entry-content{
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    margin:0 auto;
+    background-color: rgba(165,165,165,0.35);
+    width:50%;
+    border-radius:30px;
+    text-align: justify;
+    }
+    
+    .entry-content:hover{
+    transform: translateY(0);
+    box-shadow:
+    inset 0 0 60px whitesmoke,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff;
+    }
+    
+    
+    
+    .entry-title{
+    display:flex;
+    justify-content:center;
+    }
+    
+    
+    p{
+    display:flex;
+    font-family: oxanium;
+    
+    }
+    
+    
+    #secondary p{
+    display:flex;
+    justify-content:center;
+    }
+
+
+    .titre1{
+        display:flex;
+        width:18%;
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
+        margin-top:23%;
+    }
