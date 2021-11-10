@@ -11,6 +11,7 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
+		<p>projets</p>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
@@ -25,8 +26,7 @@ get_header();
 			$precedent = 0;
 			while ( have_posts() ) :
 				the_post();
-				convertirTitreCours($propriete);
-                get_template_part( 'template-parts/content', 'cours' );
+                get_template_part( 'template-parts/content', 'projets' );
 				
 			endwhile;
             
@@ -44,12 +44,3 @@ get_header();
 <?php
 get_sidebar();
 get_footer();
-
-function convertirTitreCours(&$propriete){
-	$propriete['titre'] = get_the_title(); 
-	$propriete['sigle'] = substr($propriete['titre'], 0, 7);
-	$propriete['nbHeure'] = substr($propriete['titre'],-4,3);
-	$propriete['titrePartiel'] = substr($propriete['titre'],8,-6);
-	$propriete['session'] = substr($propriete['titre'], 4,1);
-	$propriete['typeCours'] = get_field('type_de_cours');
-}

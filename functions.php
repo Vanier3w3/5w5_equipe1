@@ -179,10 +179,19 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 function extraire_article_cours($query) {
-    if(  !is_admin() && $query->is_category('cours') && $query->is_main_query() ) {
+    if( $query->is_category('cours') ) {
         //$query->set('meta_key', 'ordre');
         $query->set('orderby', array('title' => "ASC"));
         $query->set('post_per_page', -1);
     }  
 }
 add_action( "pre_get_posts", "extraire_article_cours" );
+
+function extraire_article_projets($query) {
+    if( $query->is_category('projets') ) {
+        //$query->set('meta_key', 'ordre');
+        $query->set('orderby', array('title' => "ASC"));
+        $query->set('post_per_page', -1);
+    }  
+}
+add_action( "pre_get_posts", "extraire_article_projets" );
