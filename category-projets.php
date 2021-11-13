@@ -11,7 +11,6 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-		<p>projets</p>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">

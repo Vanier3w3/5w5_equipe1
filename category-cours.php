@@ -22,14 +22,27 @@ get_header();
 
 			<?php
 			/* Start the Loop */
-			$precedent = 0;
+			$precedent = 'XX';
+	
 			while ( have_posts() ) :
 				the_post();
 				convertirTitreCours($propriete);
-                get_template_part( 'template-parts/content', 'cours' );
+				if($precedent != $propriete['session']):
+					if($precedent != 'XX'):
+				echo '<h1>session:'. $precedent . '</h1>';
+				?>
+					</section>
+				<?php
+					endif;
+				?>
+					<section class="session_bloc">
+			<?php
+				endif;
+				get_template_part( 'template-parts/content', 'cours' );
+				$precedent = $propriete['session'];
+				
 				
 			endwhile;
-            
 			the_posts_navigation();
             
             else :
@@ -47,9 +60,7 @@ get_footer();
 
 function convertirTitreCours(&$propriete){
 	$propriete['titre'] = get_the_title(); 
-	$propriete['sigle'] = substr($propriete['titre'], 0, 7);
-	$propriete['nbHeure'] = substr($propriete['titre'],-4,3);
 	$propriete['titrePartiel'] = substr($propriete['titre'],8,-6);
 	$propriete['session'] = substr($propriete['titre'], 4,1);
-	$propriete['typeCours'] = get_field('type_de_cours');
+	$propriete['typeLabel'] = get_field('type_de_cours' , 'label');
 }
