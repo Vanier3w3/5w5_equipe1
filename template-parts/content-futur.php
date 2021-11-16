@@ -22,8 +22,7 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				time1_posted_on();
-				time1_posted_by();
+		
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
@@ -48,16 +47,16 @@
 			)
 		);
 
-		wp_link_pages(
+		/* wp_link_pages(
 			array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'time1' ),
 				'after'  => '</div>',
 			)
-		);
+		); */
 		?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php time1_entry_footer(); ?>
+		<?php /* time1_entry_footer(); */ ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
