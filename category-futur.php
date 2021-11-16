@@ -19,14 +19,14 @@ get_header();
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-<div class="entry-content">
+			<!-- <div class="entry-content"> -->
 			<?php
 			/* Start the Loop */
 			$precedent = 0;
 			
 			while ( have_posts() ) :
 				the_post();
-				get_the_title();
+				get_the_title(); // non fonctionnel
                 get_template_part( 'template-parts/content', 'futur' );
 				
 			endwhile;
@@ -39,7 +39,7 @@ get_header();
 
 		endif;
 		?>
-</div>
+		<!-- </div> -->
 	</main><!-- #main -->
 
 <?php
