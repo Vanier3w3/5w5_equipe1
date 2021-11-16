@@ -61,6 +61,7 @@ get_footer();
 function convertirTitreCours(&$propriete){
 	$propriete['titre'] = get_the_title(); 
 	$propriete['titrePartiel'] = substr($propriete['titre'],8,-6);
+	$tPropriété['sigle'] = substr($tPropriété['titre'], 0, 7);
 	$propriete['session'] = substr($propriete['titre'], 4,1);
-	$propriete['typeLabel'] = get_field('type_de_cours' , 'label');
+	$propriete['typeCours'] = get_field('type_de_cours');
 }

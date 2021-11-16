@@ -12,11 +12,9 @@ global $propriete;
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<a href="<?php ;?>">
 		<h2><?php echo $propriete['titre'];?></h2>
-		<a href="<?php echo esc_url( home_url('/category/cours/' . $propriete['typeLabel']));?>">
-			<h3><?php echo $propriete['typeLabel'];?></h3>
-		</a>
+		<h3><?php echo $propriete['sigle'];?></h3>
 	</a>
-	<div style="display: none;">
+	<div class="contenu_projets">
 		<h3><?php echo the_content()?></h3>
 	</div>
 </article><!-- #post-<?php the_ID(); ?> -->

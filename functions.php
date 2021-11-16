@@ -189,8 +189,8 @@ add_action( "pre_get_posts", "extraire_article_cours" );
 
 function extraire_projets($query) {
     if(!is_admin() && is_category('6') && $query->is_main_query()) {
-        //$query->set('meta_key', 'type_de_cours');
-        $query->set('orderby', array('title' => "ASC"));
+        $query->set('meta_key', 'type_de_cours');
+        $query->set('orderby', array('type_de_cours' => "ASC" , 'title' => "ASC"));
         $query->set('post_per_page', -1);
     }  
 }
