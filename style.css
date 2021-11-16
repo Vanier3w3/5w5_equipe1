@@ -1024,6 +1024,7 @@ textarea {
 p {
   display: flex;
   font-family: oxanium;
+  align-items: left;
 }
 
 #secondary p {
@@ -1043,6 +1044,12 @@ p {
 article img {
   height: 300px;
   width: auto;
+}
+
+/* Futur
+--------------------------------------------- */
+.futur-stage figure {
+  border-radius: 10px;
 }
 
 ul li {
