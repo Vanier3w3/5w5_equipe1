@@ -1,7 +1,7 @@
 /*!
-Theme Name: time_1
+Theme Name: time1
 Theme URI: http://underscores.me/
-Author: Équipe 1
+Author: Underscores.me
 Author URI: http://underscores.me/
 Description: Description
 Version: 1.0.0
@@ -105,10 +105,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------- */
 @import "local/accueil";
 
-/* Futur
---------------------------------------------- */
-@import "local/futur";
-
 /* footer
 --------------------------------------------- */
 @import "local/footer";
+
+/* cours
+--------------------------------------------- */
+@import "local/cours";
