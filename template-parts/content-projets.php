@@ -6,17 +6,11 @@
  *
  * @package time1
  */
-global $propriete;
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<h1><?php echo $propriete['titrePartiel'];?></h1>
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-
-	</div><!-- .entry-content -->
-
-
+	<?php
+		the_post_thumbnail();
+		echo '<h2>' . the_title() . '</h2>';
+	?>
 </article><!-- #post-<?php the_ID(); ?> -->
