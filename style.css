@@ -1052,9 +1052,19 @@ article img {
   border-radius: 10px;
 }
 
-ul.liste-metiers li {
+ul.liste li {
   font-family: oxanium;
-  margin-left: -20%;
+  /* margin-left: -20%; */
+  text-align: left;
+}
+
+a {
+  text-decoration: underline;
+  color: #d3e2ff;
+}
+
+a:hover {
+  color: #9dbdff;
 }
 
 /* footer

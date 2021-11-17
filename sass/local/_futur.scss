@@ -4,7 +4,17 @@
     }
 }
 
-ul.liste-metiers li {
+ul.liste li {
     font-family: oxanium;
-    margin-left: -20%;
+    /* margin-left: -20%; */
+    text-align: left;
+}
+
+a {
+    text-decoration: underline;
+    color: #d3e2ff;
+}
+
+a:hover {
+    color: rgb(157, 189, 255);
 }
