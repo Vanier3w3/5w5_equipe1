@@ -4,9 +4,11 @@
     flex-direction: column;
     margin:0 auto;
     background-color: rgba(165,165,165,0.35);
-    width:50%;
+    width:60%;
     border-radius:30px;
     text-align: justify;
+    padding: 2%;
+    margin-bottom: 5%;
     }
     
     .entry-content:hover{
@@ -33,7 +35,7 @@
     p{
     display:flex;
     font-family: oxanium;
-    
+    align-items: left;
     }
     
     
@@ -50,4 +52,11 @@
         align-content: center;
         margin: 0 auto;
         margin-top:23%;
+    }
+
+
+    // page de projets
+    article img {
+        height: 300px;
+        width: auto;
     }
