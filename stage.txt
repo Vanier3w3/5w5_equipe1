@@ -19,3 +19,43 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
+
+<!-- wp:paragraph {"fontSize":"large"} -->
+<p class="has-large-font-size">Différents types de stages disponibles</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns {"className":"futur-stage"} -->
+<div class="wp-block-columns futur-stage"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph {"fontSize":"medium"} -->
+<p class="has-medium-font-size">Des stages d'été rémunérés permettant de bonifier notre dossier scolaire, ça existe ?</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La Technique d'Intégration Multimédia invite ses étudiants de 1ère et 2e années à faire des recherches sur des potentiels stages auxquels ils pourraient s'inscrire afin d'en apprendre d'avantage sur leur potentiel futur milieu de travail. Cette formule est récente et offre un petit plus dans le dossier des étudiants qui auront complété le stage. </p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:image {"id":656,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://localhost:8080/duplication/wp-content/uploads/2021/11/IMG_7551_1-300x200-1.png" alt="" class="wp-image-656"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"className":"futur-stage"} -->
+<div class="wp-block-columns futur-stage"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:gallery {"ids":[647],"linkTo":"none"} -->
+<figure class="wp-block-gallery columns-1 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img src="http://localhost:8080/duplication/wp-content/uploads/2021/11/DSC0387-1568x1041-1-1024x680.png" alt="" data-id="647" data-full-url="http://localhost:8080/duplication/wp-content/uploads/2021/11/DSC0387-1568x1041-1.png" data-link="http://localhost:8080/duplication/dsc0387-1568x1041/" class="wp-image-647"/></figure></li></ul></figure>
+<!-- /wp:gallery --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph {"fontSize":"medium"} -->
+<p class="has-medium-font-size">Les stages de fin de session</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Lors de la 5e session de l'étudiant, celui-ci devra entamer ses recherches à propos de son stage de fin d'étude d'une durée de 2 mois qui se déroulera lors de sa 6e session.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->

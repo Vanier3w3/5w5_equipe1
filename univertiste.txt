@@ -1,0 +1,23 @@
+<!-- wp:paragraph -->
+<p>De l'information à propos des universités</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Lors de leur dernière année, les étudiants pourront alors commencer à penser s'ils veulent aller directement sur le marché du travail suite à leur stage, ou plutôt continuer leurs études afin de se spécialiser dans un domaine précis.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Plusieurs universités sont affiliées au programme actuel de la Technique d'Intégration Multimédia et certains programmes universitaires d'universités situés à l'extérieur de la région de Montréal se donnent également dans des locaux à Montréal.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La Technique possède 4 ententes avec des universités différentes</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"liste"} -->
+<ul class="liste"><li>DEC-BAC en&nbsp;<a rel="noreferrer noopener" href="https://www.uqat.ca/etudes/creation-et-nouveaux-medias/dec-bac-en-creation-de-jeux-video-profil-integration/" target="_blank">création de jeux vidéo – concentration Intégration logicielle</a>, Centre de Montréal de l’UQAT</li><li>DEC-BAC en&nbsp;<a rel="noreferrer noopener" href="https://www.uqat.ca/etudes/creation-et-nouveaux-medias/dec-bac-en-creation-numerique-profil-cinema/" target="_blank">création numérique – concentration Cinéma</a>, Campus de Rouyn-Noranda de l’UQAT</li><li>DEC-BAC en&nbsp;<a rel="noreferrer noopener" href="https://www.uqat.ca/etudes/creation-et-nouveaux-medias/dec-bac-en-creation-numerique-profil-creation-3d/" target="_blank">création numérique – concentration Création 3D</a>, Campus de Rouyn-Noranda de l’UQAT</li><li>DEC-BAC en&nbsp;<a rel="noreferrer noopener" href="https://www.uqat.ca/etudes/creation-et-nouveaux-medias/dec-bac-en-creation-numerique-profil-technologie-web/" target="_blank">création numérique – concentration Technologie Web</a>, Campus de Rouyn-Noranda de l’UQAT</li><li>B. en&nbsp;<a rel="noreferrer noopener" href="http://www.etsmtl.ca/Programmes-Etudes/1er-cycle/Bac/7070" target="_blank">génie des technologies de l’information</a>&nbsp;ou en&nbsp;<a rel="noreferrer noopener" href="http://www.etsmtl.ca/Programmes-Etudes/1er-cycle/Bac/7065" target="_blank">génie logiciel</a>&nbsp;à l’ÉTS&nbsp;</li><li>B. en communication (<a rel="noreferrer noopener" href="https://etudier.uqam.ca/programme?code=6637#bloc_presentation" target="_blank">médias numériques</a>) et (<a rel="noreferrer noopener" href="https://etudier.uqam.ca/programme?code=6504#bloc_presentation" target="_blank">création médias – médias interactifs</a>) à l’UQAM</li><li>B. en&nbsp;<a rel="noreferrer noopener" href="https://www.polymtl.ca/programmes/programmes/bc-logiciel" target="_blank">génie logiciel</a>&nbsp;à Polytechnique Montréal</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
