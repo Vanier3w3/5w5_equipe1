@@ -1,30 +1,32 @@
 <?php
 /**
- * Template part for displaying posts
+ * Template part l'affichage des bloc de cours dans front-page.php
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package time1
+ * @package theme-sc
  */
-?>
-<div class="conteneurP">
-<article class="flip-card" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<div class="flip-card-inner">
-<div class="flip-card-front">
-	<?php
-		the_post_thumbnail();
-	?>
-</div>
+global $tPropriété;
 
+?>
+
+
+<article class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <?php the_post_thumbnail ('thumbnail'); ?>
+</div>
 <div class="flip-card-back">
     
      <h1><a href="<?php echo get_permalink() ?>"><?php the_title();?></a></h1>
      <p><a href="<?php echo get_permalink() ?>"><?php the_archive_title();?></a></p>
     <p><a href="<?php echo get_permalink() ?>"><?php the_author();?></a> </p>
-	<?php echo '<p>'. get_field('type_de_cours') . '</p>'; ?>
-
 </div>
 </div>
 
-</article><!-- #post-<?php the_ID(); ?> -->
-</div>
+</article>
+
+
+
+
+

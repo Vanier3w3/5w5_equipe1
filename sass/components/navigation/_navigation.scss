@@ -128,7 +128,7 @@
 
 /////////////////////// MON CODE NAV ET TITRE /////////////////////////////
    
-/*.main-navigation ul
+.main-navigation ul
 {
 	display: flex;
 	list-style:none;
@@ -153,14 +153,17 @@
 
 .fleche
 {
-	margin-top: 5%;
-	margin-left: 48%;
+	display: flex;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	justify-content: center;
+	margin-left:48%;
    }
 
    
    .logoM9{
 	  background-image: url(logoMaisonneuve.jpeg);
-   }*/
+   }
 
 
 
@@ -180,11 +183,10 @@
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
-		background-color: #000;
 		text-align : left;
 		z-index: 99999;
 		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			
 			float: left;
 			position: absolute;
 			top: 100%;
@@ -285,9 +287,7 @@ menu tablet
 ------------------------------------------------------------------------------ */
 @media screen and (min-width: 37.5em) {
 
-	.menu-toggle {
-		display: none;
-	}
+	
 
 	.essai1{
 		display:none;
@@ -370,24 +370,7 @@ menu tablet
 
 
 
-  @keyframes animatetitle{
-	0%{
-		transform :translateY(-450px) ;
-		
-	}
-	50%{
-		transform :translateY(50px) scaleY(2) ;
-		
-	}
-	100%{
-		transform : scaleY(1) ;
-	
-	}
-	}
-	
-	.site-title{
-	animation: animatetitle 4s;
-	}
+  
 	
   
   
@@ -444,3 +427,22 @@ menu tablet
   }
   
   
+  @include mobile{
+	.fleche{
+		display: none;
+	}
+}
+
+@include tablet{
+#site-navigation button{
+	display: none;
+	background:transparent;
+}
+}
+
+@include desktop{
+	#site-navigation button{
+		display: none;
+		background:transparent;
+}
+}

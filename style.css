@@ -748,39 +748,34 @@ textarea {
 		flex: 1 0 50%;
 	}
 }*/
-/*.main-navigation ul
-{
-	display: flex;
-	list-style:none;
-	text-decoration:none;
-	padding-top:0px;
-	justify-content:space-around;
-	align-content: center;
-	
-	
-	
+.main-navigation ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  padding-top: 0px;
+  justify-content: space-around;
+  align-content: center;
 }
 
-.site-title a
-{
-	display:flex;
-	text-decoration:none;
-	justify-content:center;
-	font-size:3.2em;
-
+.site-title a {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  font-size: 3.2em;
 }
 
+.fleche {
+  display: flex;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  justify-content: center;
+  margin-left: 48%;
+}
 
-.fleche
-{
-	margin-top: 5%;
-	margin-left: 48%;
-   }
+.logoM9 {
+  background-image: url(logoMaisonneuve.jpeg);
+}
 
-   
-   .logoM9{
-	  background-image: url(logoMaisonneuve.jpeg);
-   }*/
 .main-navigation {
   display: block;
   width: 100vw;
@@ -793,14 +788,12 @@ textarea {
   list-style: none;
   margin: 0;
   padding-left: 0;
-  background-color: #000;
   text-align: left;
   z-index: 99999;
   /* fin du sub-menu */
 }
 
 .main-navigation ul ul {
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
   position: absolute;
   top: 100%;
@@ -884,9 +877,6 @@ Bouton burger
 menu tablet
 ------------------------------------------------------------------------------ */
 @media screen and (min-width: 37.5em) {
-  .menu-toggle {
-    display: none;
-  }
   .essai1 {
     display: none;
   }
@@ -961,22 +951,6 @@ menu tablet
   flex: 1 0 50%;
 }
 
-@keyframes animatetitle {
-  0% {
-    transform: translateY(-450px);
-  }
-  50% {
-    transform: translateY(50px) scaleY(2);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
-
-.site-title {
-  animation: animatetitle 4s;
-}
-
 /* --------------------------------------------------------------------------------------
   Les variables 
   ---------------------------------------------------------------------------------------- */
@@ -1029,6 +1003,26 @@ menu tablet
   stroke-dasharray: 90 207;
   stroke-dashoffset: -134;
   stroke-width: 6;
+}
+
+@media (max-width: 690px) {
+  .fleche {
+    display: none;
+  }
+}
+
+@media (min-width: 695px) {
+  #site-navigation button {
+    display: none;
+    background: transparent;
+  }
+}
+
+@media (min-width: 1200px) {
+  #site-navigation button {
+    display: none;
+    background: transparent;
+  }
 }
 
 /* Posts and pages
@@ -1287,208 +1281,191 @@ p {
   justify-content: center;
 }
 
-.titre1 {
+.site-title {
   display: flex;
   width: 18%;
   justify-content: center;
   align-content: center;
   margin: 0 auto;
-  margin-top: 23%;
+  margin-top: 18%;
 }
 
-body.home {
-  background-color: fff;
-  height: 500vh;
-  width: 100vw;
-  overflow-x: hidden;
+.sous-titre {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
-body.home::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 500vh;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
+.sous-titre:hover {
+  text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+  color: black;
 }
 
-@media (min-width: 800px) {
-  body.home::after {
-    clip-path: polygon(90% 0, 100% 0, 100% 100%, 80% 100%);
-    background-color: white;
-  }
+#primary-menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
 }
 
-.home #primary {
-  width: 100vw;
-  margin: 0;
-}
-
-.home #primary header {
-  text-align: center;
-}
-
-.site-title {
-  font-weight: bold;
-  font-size: clamp(1rem, -0.875rem + 8.333vw, 3rem);
-  margin-bottom: 0;
-}
-
-.site-title a {
-  text-decoration: none;
-}
-
-.site-description {
-  margin-top: 0;
-  font-weight: normal;
-  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 1.5rem);
-}
-
-.home .entry-header {
-  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 3rem);
-}
-
-.entry-title {
-  padding-left: 5%;
-  padding-right: 5%;
-  text-align: justify;
-}
-
+/*body.home{
+  
+        width : 100vw;
+        overflow-x :hidden;
+       
+    }
+    
+    body.home::after{
+        content: "";
+        position : absolute;
+        width: 100%;
+       
+        top : 0;
+        bottom :0;
+        left : 0;
+        right : 0;
+       
+    
+       z-index: -1;
+    }
+    
+    .home {
+        #primary {
+            width: 100vw;
+            margin : 0;
+    
+            header {
+               
+                text-align: center;
+            }
+        }
+    
+    } 
+    */
+/*.site-title {
+    
+    
+        font-weight: bold;
+        font-size: clamp(1rem, -0.875rem + 8.333vw,3rem);
+        margin-bottom: 0;
+        //text-align: center;
+        a {
+            text-decoration: none;
+        }
+    }
+    
+    .site-description {
+        margin-top : 0;
+        font-weight: normal;
+        font-size: clamp(.6rem, -0.875rem + 8.333vw,1.5rem);
+    }
+    
+    .home .entry-header {
+        font-size : clamp(.6rem, -0.875rem + 8.333vw,3rem);
+        
+    }
+    
+    .entry-title{
+        padding-left:5%;
+        padding-right:5%;
+        text-align: justify;
+    }
+    */
 /* --------------------------------------------------------------------------------------- 
     Liste des blocs de cours par type_de_cours
     ------------------------------------------------------------------------------------------ */
-.home .cours {
-  display: flex;
-  margin-top: 50%;
-  flex-direction: column;
-}
+/*.home .cours {
+        display : flex;
+        //margin-top: 50%;
+        flex-direction: column;
+        h2 {
+            text-align: center;
+            
+        }
+        section.bloc {
+           
+            display : flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            article {
+                display : flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                border : 1px solid #aaa;
+                width : 95%;
+                margin : 1%;
+                padding  : 1rem;
+                text-align : center;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                p {
+                    margin: .4rem;
+                    font-size: 1rem;
+                }
+                a {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    text-decoration: none;
+                }
+            }
+            @include tablet {
+              
+                article {
+                    width : 47%;
+                    margin : 1%;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    background-image: hidden;
+                }
+                .main-navigation{
+                    display: none;
+                }
+                #burger{
+                    div{
+                        display: none;
+                    }
+                }
+            }
+            @include desktop {
 
-.home .cours h2 {
-  text-align: center;
-}
-
-.home .cours section.bloc {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.home .cours section.bloc article {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid #aaa;
-  width: 95%;
-  margin: 1%;
-  padding: 1rem;
-  text-align: center;
-  background-image: url(imgBackArticle.jpeg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.home .cours section.bloc article p {
-  margin: .4rem;
-  font-size: 1rem;
-}
-
-.home .cours section.bloc article a {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-@media (min-width: 800px) {
-  .home .cours section.bloc article {
-    width: 47%;
-    margin: 1%;
-    background-image: url(imgBackArticle.jpeg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-image: hidden;
-  }
-  .home .cours section.bloc .main-navigation {
-    display: none;
-  }
-  .home .cours section.bloc #burger div {
-    display: none;
-  }
-}
-
-@media (min-width: 1200px) {
-  .home .cours section.bloc article {
-    width: 31%;
-    margin: 1%;
-    background-image: url(tokyoGk.jpeg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-  .home .cours section.bloc .main-navigation {
-    display: none;
-  }
-  .home .cours section.bloc #burger div {
-    display: none;
-  }
-}
-
-.accueil ul {
-  list-style-type: none;
-  font-size: clamp(1.2rem, -0.875rem + 8.333vw, 3rem);
-}
-
-.accueil img {
-  display: block;
-  border-radius: 50%;
-}
-
-.imagesection {
-  display: flex;
-  width: 300vw;
-  height: 50vh;
-  transition: transform .5s;
-}
-
-.imagesection div {
-  background-image: url(tokyoGken.jpeg);
-  width: 100vw;
-  height: 40vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-.admin-rapid {
-  color: black;
-  font-weight: bold;
-  text-align: justify;
-  width: 100%;
-  margin-top: 5%;
-  padding-left: 2%;
-  padding-right: 2%;
-  padding-bottom: 2%;
-}
-
-#media_image-2 {
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-@keyframes anim-textNouvelles {
-  0% {
-    transform: translateX(0) translateY(0);
-  }
-  100% {
-    transform: translateX(20px) translateY(0);
-  }
-}
-
+                #site-navigation button{
+                display: none;
+                }
+                article {
+                width : 31%;
+                margin : 1%;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                }
+                .main-navigation{
+                    display: none;
+                }
+                #burger{
+                    div{
+                        display: none;
+                    }
+                }
+               
+            }
+        }
+    }
+    
+    
+    .accueil{
+        ul{
+            list-style-type: none;
+            font-size: clamp(1.2rem, -0.875rem + 8.333vw, 3rem);
+        }
+    
+        img{
+            display: block;
+            border-radius: 50%;
+        }
+    }
+    
+    
+    
+  */
 .footer__links {
   padding: 5% 5% 5% 5%;
 }
@@ -1525,17 +1502,9 @@ body.home::after {
   scroll-behavior: auto;
 }
 
-.site-branding {
-  width: 100%;
-  background-color: black;
-  padding-top: 3px;
-  padding-left: 2%;
-}
-
-@media (min-width: 800px) {
+@media (min-width: 695px) {
   .main-navigation {
     width: 100%;
-    background-color: black;
     height: 15%;
   }
 }
@@ -1543,7 +1512,6 @@ body.home::after {
 @media (min-width: 1200px) {
   .main-navigation {
     width: 100%;
-    background-color: black;
     height: 15%;
   }
 }
@@ -1551,11 +1519,22 @@ body.home::after {
 /* projets
 --------------------------------------------- */
 .conteneurP {
+  /*width:100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    animation : anim-carte .5s both;
+    margin-bottom: 10%;*/
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto auto auto;
-  justify-content: space-around;
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 20%;
+  background-color: white;
   animation: anim-carte .5s both;
+  background-color: rgba(165, 165, 165, 0.35);
+  border-radius: 30px;
 }
 
 .conteneurP .flip-card {
@@ -1589,12 +1568,11 @@ body.home::after {
 }
 
 .conteneurP .flip-card-front {
-  background-color: #bbb;
   color: black;
 }
 
 .conteneurP .flip-card-back {
-  background-color: #c1f4f8;
+  background-color: #e100ff;
   color: white;
   transform: rotateY(180deg);
 }
@@ -1609,6 +1587,11 @@ body.home::after {
 
 .conteneurP a:hover {
   animation: anim-texte .5s both;
+}
+
+.conteneurP:hover {
+  transform: translateY(0);
+  box-shadow: inset 0 0 60px whitesmoke, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
 }
 
 @keyframes anim-carte {
@@ -1687,11 +1670,116 @@ body.home::after {
 
 /* etudiant
 --------------------------------------------- */
+.conteneurE {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin: 0 auto;
+  width: 80%;
+  animation: anim-carte .5s both;
+  margin-bottom: 20%;
+  background-color: rgba(165, 165, 165, 0.35);
+  border-radius: 30px;
+}
+
+.conteneurE .flip-card {
+  margin: 2%;
+  background-color: transparent;
+  width: 150px;
+  height: 150px;
+  perspective: 1000px;
+}
+
+.conteneurE .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.conteneurE .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.conteneurE .flip-card-front, .conteneurE .flip-card-back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.conteneurE .flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.conteneurE .flip-card-back {
+  background-color: #050505;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.conteneurE a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.5rem;
+  animation: anim-texte2 .5s both;
+}
+
+.conteneurE a:hover {
+  animation: anim-texte .5s both;
+}
+
+.conteneurE:hover {
+  transform: translateY(0);
+  box-shadow: inset 0 0 60px whitesmoke, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+}
+
+@keyframes anim-carte {
+  0% {
+    opacity: 0;
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    opacity: .5;
+    transform: translateX(0) translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(100px);
+  }
+}
+
+@keyframes anim-texte {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes anim-texte2 {
+  0% {
+    opacity: 0;
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    opacity: .5;
+    transform: translateX(0) translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(20px);
+  }
+}
+
 /* footer
 --------------------------------------------- */
-/*#colophon{
-background-color: black;
-width: 100%;
-height:200px;
-}*/
 /*# sourceMappingURL=style.css.map */

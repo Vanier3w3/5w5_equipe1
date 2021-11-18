@@ -43,23 +43,36 @@
     }
 
 
-    .titre1{
+    .site-title{
         display:flex;
         width:18%;
         justify-content: center;
         align-content: center;
         margin: 0 auto;
-        margin-top:23%;
+        margin-top:18%;
     }
 
+    .sous-titre{
+        display:flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .sous-titre:hover{
+        text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+        color:black;
+    }
+    
+    #primary-menu{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    }
 
-
-
+   
 
     //////// Code rajouté par Sab/////
-    body.home{
-        background-color : fff;
-        height : 500vh;
+    /*body.home{
+  
         width : 100vw;
         overflow-x :hidden;
        
@@ -69,15 +82,12 @@
         content: "";
         position : absolute;
         width: 100%;
-        height: 500vh;
+       
         top : 0;
         bottom :0;
         left : 0;
         right : 0;
-        @include tablet{
-            clip-path : polygon(90% 0, 100% 0, 100% 100% , 80% 100%);
-             background-color: rgb(255, 255, 255);
-        }
+       
     
        z-index: -1;
     }
@@ -94,8 +104,8 @@
         }
     
     } 
-    
-    .site-title {
+    */
+    /*.site-title {
     
     
         font-weight: bold;
@@ -123,14 +133,14 @@
         padding-right:5%;
         text-align: justify;
     }
-    
+    */
     
     /* --------------------------------------------------------------------------------------- 
     Liste des blocs de cours par type_de_cours
     ------------------------------------------------------------------------------------------ */
-    .home .cours {
+    /*.home .cours {
         display : flex;
-        margin-top: 50%;
+        //margin-top: 50%;
         flex-direction: column;
         h2 {
             text-align: center;
@@ -151,7 +161,6 @@
                 margin : 1%;
                 padding  : 1rem;
                 text-align : center;
-                background-image: url(imgBackArticle.jpeg);
                 background-repeat: no-repeat;
                 background-size: 100%;
                 p {
@@ -165,10 +174,10 @@
                 }
             }
             @include tablet {
+              
                 article {
                     width : 47%;
                     margin : 1%;
-                    background-image: url(imgBackArticle.jpeg);
                     background-repeat: no-repeat;
                     background-size: 100%;
                     background-image: hidden;
@@ -183,10 +192,13 @@
                 }
             }
             @include desktop {
+
+                #site-navigation button{
+                display: none;
+                }
                 article {
                 width : 31%;
                 margin : 1%;
-                background-image: url(tokyoGk.jpeg);
                 background-repeat: no-repeat;
                 background-size: 100%;
                 }
@@ -218,61 +230,10 @@
     
     
     
-    .imagesection{
-        display:flex;
-        width: 300vw;
-        height: 50vh;
-        transition: transform .5s;
-        
-    
-        div{
-        background-image: url(tokyoGken.jpeg);
-        width: 100vw;
-        height:40vw;
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        }
-    }
+  */
     
     
-    
-    
-    
-    .admin-rapid{
-    
-        
-        color:black;
-        font-weight: bold;
-        text-align: justify;
-        width: 100%;
-        margin-top:5%;
-        padding-left: 2%;
-        padding-right:2%;
-        padding-bottom: 2%;
-        //-webkit-box-shadow: 5px 5px 33px 5px #8E8E8E; 
-       // box-shadow: 5px 5px 33px 5px #8E8E8E;
-    }
-    #media_image-2{
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-    }
-    
-    @keyframes anim-textNouvelles {
-        0%{
-            
-            transform : translateX(0) translateY(0);
-        }
-     
-        100%{
-            
-            transform : translateX(20px) translateY(0);
-        }
-    }
-    
+
     
     .footer__links{
         padding:5% 5% 5% 5%;
@@ -313,12 +274,6 @@
     }
     
     
-    .site-branding{
-        width: 100%;
-        background-color: black;
-        padding-top:3px;
-        padding-left: 2%;
-    }
     
     
     .main-navigation{
@@ -326,14 +281,12 @@
         
         @include tablet {
           width: 100%;
-          background-color: black;
+        
           height: 15%;
         }
         @include desktop {
             width: 100%;
-            background-color: black;
+          
             height: 15%;
         }
     }
-
-    // essai 
