@@ -28,10 +28,8 @@
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
-<<<<<<< HEAD
-			
 				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">	<img src="http://localhost:8888/siteSab/wp-content/uploads/2021/11/cropped-LogoTimSiteE-e1636483598789-4.png" class="titre1" style="background-size:30px;"> <?php bloginfo( 'name' ); ?></img></a></h1>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">	<?php the_custom_logo(); bloginfo( 'name' ); ?></a></h1>
 				<p class="sous-titre">TECHNIQUES D'INTÉGRATION MULTIMÉDIA</p>
 				
 				<?php
@@ -40,23 +38,11 @@
 				
 				<?php
 			
-=======
-			if ( is_front_page() && is_home() ) :
-				?>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo_home"><?php the_custom_logo();?></a>
-				<?php
-			else :
-				?>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo_page"><?php the_custom_logo();?></a>
-				<?php
-			endif;
->>>>>>> main
 			$time1_description = get_bloginfo( 'description', 'display' );
 			if ( $time1_description || is_customize_preview() ) :
 				?>
 				<p class="site-description"><?php echo $time1_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
-<<<<<<< HEAD
 		
 		</div><!-- .site-branding -->
 
@@ -71,12 +57,6 @@
       		</svg>
     		</button>
 		
-=======
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'time1' ); ?></button>
->>>>>>> main
 			<?php
 			wp_nav_menu(
 				array(
@@ -85,7 +65,6 @@
 				)
 			);
 			?>
-<<<<<<< HEAD
 			
 		
 		</nav><!-- #site-navigation -->
@@ -103,7 +82,3 @@
         let bar2 = document.querySelector('#burger div:nth-of-type(2)')
         let bar3 = document.querySelector('#burger div:nth-of-type(3)')
     </script>
-=======
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
->>>>>>> main
