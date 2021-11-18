@@ -15,53 +15,31 @@ get_header();
 
 			<header class="page-header">
 				<?php
-<<<<<<< HEAD
-				//the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
-			
-			<div class="conteneurP">
-			
-			
-			<?php
-			
-=======
 				the_archive_title( '<h1 class="page-title">', '</h1>' );
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-
+			<!-- <div class="entry-content"> -->
 			<?php
 			/* Start the Loop */
 			$precedent = 0;
->>>>>>> main
+			
 			while ( have_posts() ) :
 				the_post();
-                get_template_part( 'template-parts/content', 'projets' );
+				get_the_title(); // non fonctionnel
+                get_template_part( 'template-parts/content', 'futur' );
 				
-<<<<<<< HEAD
-			endwhile; ?>
-			
-			<?php
-=======
 			endwhile;
             
->>>>>>> main
-			the_posts_navigation();
+			//the_posts_navigation();
             
             else :
                 
-                get_template_part( 'template-parts/content', 'none' );
+                //get_template_part( 'template-parts/content', 'none' );
 
 		endif;
 		?>
-
-<<<<<<< HEAD
-		
-	</div>
-=======
->>>>>>> main
+		<!-- </div> -->
 	</main><!-- #main -->
 
 <?php

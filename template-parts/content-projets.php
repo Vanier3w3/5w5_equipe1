@@ -7,6 +7,7 @@
  * @package time1
  */
 ?>
+<<<<<<< HEAD
 <div class="conteneurP">
 <article class="flip-card" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <div class="flip-card-inner">
@@ -28,3 +29,12 @@
 
 </article><!-- #post-<?php the_ID(); ?> -->
 </div>
+=======
+
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<?php
+		the_post_thumbnail();
+		echo '<h2>' . the_title() . '</h2>';
+	?>
+</article><!-- #post-<?php the_ID(); ?> -->
+>>>>>>> main

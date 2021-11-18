@@ -13,6 +13,7 @@
 
 	<footer id="colophon" class="site-footer">
 
+<<<<<<< HEAD
 	<aside id="secondary" class="widget-area">
 	<section id="block-6" class="widget widget_block">
 <div class="wp-block-group"><div class="wp-block-group__inner-container">
@@ -33,6 +34,14 @@
 
 </section></aside>
 
+=======
+
+	<!--	<div class="site-info">
+		<p>
+		</div>--><!-- .site-info -->
+
+		<img class="logoM9" > </img>
+>>>>>>> main
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
