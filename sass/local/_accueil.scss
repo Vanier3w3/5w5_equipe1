@@ -4,11 +4,17 @@
     flex-direction: column;
     margin:0 auto;
     background-color: rgba(165,165,165,0.35);
+<<<<<<< HEAD
+    width:50%;
+    border-radius:30px;
+    text-align: justify;
+=======
     width:60%;
     border-radius:30px;
     text-align: justify;
     padding: 2%;
     margin-bottom: 5%;
+>>>>>>> main
     }
     
     .entry-content:hover{
@@ -35,7 +41,11 @@
     p{
     display:flex;
     font-family: oxanium;
+<<<<<<< HEAD
+    
+=======
     align-items: left;
+>>>>>>> main
     }
     
     
@@ -45,12 +55,258 @@
     }
 
 
+<<<<<<< HEAD
+    .site-title{
+=======
     .titre1{
+>>>>>>> main
         display:flex;
         width:18%;
         justify-content: center;
         align-content: center;
         margin: 0 auto;
+<<<<<<< HEAD
+        margin-top:18%;
+    }
+
+    .sous-titre{
+        display:flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .sous-titre:hover{
+        text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+        color:black;
+    }
+    
+    #primary-menu{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    }
+
+   
+
+    //////// Code rajouté par Sab/////
+    /*body.home{
+  
+        width : 100vw;
+        overflow-x :hidden;
+       
+    }
+    
+    body.home::after{
+        content: "";
+        position : absolute;
+        width: 100%;
+       
+        top : 0;
+        bottom :0;
+        left : 0;
+        right : 0;
+       
+    
+       z-index: -1;
+    }
+    
+    .home {
+        #primary {
+            width: 100vw;
+            margin : 0;
+    
+            header {
+               
+                text-align: center;
+            }
+        }
+    
+    } 
+    */
+    /*.site-title {
+    
+    
+        font-weight: bold;
+        font-size: clamp(1rem, #{"-0.875rem + 8.333vw"},3rem);
+        margin-bottom: 0;
+        //text-align: center;
+        a {
+            text-decoration: none;
+        }
+    }
+    
+    .site-description {
+        margin-top : 0;
+        font-weight: normal;
+        font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},1.5rem);
+    }
+    
+    .home .entry-header {
+        font-size : clamp(.6rem, #{"-0.875rem + 8.333vw"},3rem);
+        
+    }
+    
+    .entry-title{
+        padding-left:5%;
+        padding-right:5%;
+        text-align: justify;
+    }
+    */
+    
+    /* --------------------------------------------------------------------------------------- 
+    Liste des blocs de cours par type_de_cours
+    ------------------------------------------------------------------------------------------ */
+    /*.home .cours {
+        display : flex;
+        //margin-top: 50%;
+        flex-direction: column;
+        h2 {
+            text-align: center;
+            
+        }
+        section.bloc {
+           
+            display : flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            article {
+                display : flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                border : 1px solid #aaa;
+                width : 95%;
+                margin : 1%;
+                padding  : 1rem;
+                text-align : center;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                p {
+                    margin: .4rem;
+                    font-size: 1rem;
+                }
+                a {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    text-decoration: none;
+                }
+            }
+            @include tablet {
+              
+                article {
+                    width : 47%;
+                    margin : 1%;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    background-image: hidden;
+                }
+                .main-navigation{
+                    display: none;
+                }
+                #burger{
+                    div{
+                        display: none;
+                    }
+                }
+            }
+            @include desktop {
+
+                #site-navigation button{
+                display: none;
+                }
+                article {
+                width : 31%;
+                margin : 1%;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                }
+                .main-navigation{
+                    display: none;
+                }
+                #burger{
+                    div{
+                        display: none;
+                    }
+                }
+               
+            }
+        }
+    }
+    
+    
+    .accueil{
+        ul{
+            list-style-type: none;
+            font-size: clamp(1.2rem, #{"-0.875rem + 8.333vw"}, 3rem);
+        }
+    
+        img{
+            display: block;
+            border-radius: 50%;
+        }
+    }
+    
+    
+    
+  */
+    
+    
+
+    
+    .footer__links{
+        padding:5% 5% 5% 5%;
+    }
+    
+    .page-title{
+        margin-left:6%;
+    }
+    
+    .menu-brands {
+        color: #000;
+        cursor: pointer;
+        display: block;
+        height: 45px;
+        overflow: hidden;
+        font: 600 16px/22px proxima-nova,Arial,sans-serif;
+        letter-spacing: 1px;
+        padding: 11px 13px;
+        text-transform: uppercase;
+        text-decoration: none;
+       
+    }
+    
+    .menu-brands.active {
+        background-color: #000;
+        color: #fff;
+    }
+    
+    
+    .menu-brands__track {
+        display: flex;
+        -ms-overflow-style: none;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        position: relative;
+        scroll-behavior: auto;
+    }
+    
+    
+    
+    
+    .main-navigation{
+        
+        
+        @include tablet {
+          width: 100%;
+        
+          height: 15%;
+        }
+        @include desktop {
+            width: 100%;
+          
+            height: 15%;
+        }
+=======
         margin-top:23%;
     }
 
@@ -59,4 +315,5 @@
     article img {
         height: 300px;
         width: auto;
+>>>>>>> main
     }

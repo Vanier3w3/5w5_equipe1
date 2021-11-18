@@ -105,6 +105,19 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------- */
 @import "local/accueil";
 
+<<<<<<< HEAD
+/* projets
+--------------------------------------------- */
+@import "local/projets";
+
+/* etudiant
+--------------------------------------------- */
+@import "local/etudiant";
+
+/* footer
+--------------------------------------------- */
+@import "local/footer";
+=======
 /* footer
 --------------------------------------------- */
 @import "local/footer";
@@ -112,3 +125,4 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* cours
 --------------------------------------------- */
 @import "local/cours";
+>>>>>>> main
