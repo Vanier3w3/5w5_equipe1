@@ -46,16 +46,18 @@
             
             article{
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 align-items: center;
-                width: 80%;
+                width: 40%;
+                padding: 0 5%;
                 border-radius: 15px;
                 background-color: rgba(165,165,165,0.35);
-                overflow: hidden;
+                overflow: scroll;
                 position: relative;
                 
                 .infoCours{
                     display: flex;
+                    opacity: 1;
                     flex-direction: column;
                     justify-content: space-around;
                     align-items: center;
@@ -73,27 +75,28 @@
                 .contenu_cours{
                     display: block;
                     position: absolute;
-                    height: 100%;
-                    left: 300px;
+                    top: -10000px;
+                    padding: 5%;           
                     p{
-                        font-size: .8em;
+                        font-size: 1em;
                     }
                 }
 
-
+                &:hover{
+                    width: 50%;
+                    .infoCours{
+                        opacity: 0;
+                    }
+                    .contenu_cours{
+                        top: 0px;
+                    }
+                }
             }
         }
     }
 
-    .sessionBloc,
-    .fleche_cours,
-    .coursBloc{
-        transition: all .5s ease-in-out;
-    }
-    
-    @include mobile {
 
-        
+    @include mobile {
         .sessionBloc{
             width: 90%;
             .fleche_cours{
@@ -110,6 +113,15 @@
 
                 article{
                     width: 90%;
+                    &:hover{
+                        width: 90%;
+                        .infoCours{
+                            opacity: 0;
+                        }
+                        .contenu_cours{
+                            top: 0px;
+                        }
+                    }
                 }
             }
             &:hover,
@@ -123,5 +135,18 @@
                 }
             }
         }  
+    }
+
+    @include tablet {
+        .sessionBloc{
+            width: 75%;
+        }
+    }
+
+    .sessionBloc,
+    .fleche_cours,
+    .coursBloc,
+    article{
+        transition: all .5s ease-in-out;
     }
 }
