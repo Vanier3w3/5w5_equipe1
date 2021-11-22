@@ -10,9 +10,11 @@ global $propriete;
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<h2><?php echo $propriete['titrePartiel'];?></h2>
-	<h3><?php echo $propriete['sigle'];?></h3>
-	<h3><?php echo $propriete['typeCours'];?></h3>
+	<div class="infoCours">
+		<h2><?php echo $propriete['titrePartiel'];?></h2>
+		<h3><?php echo $propriete['sigle'];?></h3>
+		<h3><?php echo $propriete['typeCours'];?></h3>
+	</div>
 	<div class="contenu_cours">
 		<?php echo the_content()?>
 	</div>
