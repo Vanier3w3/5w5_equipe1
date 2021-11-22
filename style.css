@@ -1909,12 +1909,13 @@ height:200px;
     flex-direction: column;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     max-height: 0;
+    width: 90%;
   }
   #contenuPage .sessionBloc .coursBloc article {
-    width: 90%;
+    width: 100%;
   }
   #contenuPage .sessionBloc .coursBloc article:hover {
-    width: 90%;
+    width: 100%;
   }
   #contenuPage .sessionBloc .coursBloc article:hover .infoCours {
     opacity: 0;
@@ -1940,7 +1941,9 @@ height:200px;
 #contenuPage .sessionBloc,
 #contenuPage .fleche_cours,
 #contenuPage .coursBloc,
-#contenuPage article {
+#contenuPage article,
+#contenuPage .infoCours,
+#contenuPage .contenu_cours {
   transition: all .5s ease-in-out;
 }
 

@@ -110,11 +110,12 @@
                 flex-direction: column;
                 clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
                 max-height: 0;
+                width: 90%;
 
                 article{
-                    width: 90%;
+                    width: 100%;
                     &:hover{
-                        width: 90%;
+                        width: 100%;
                         .infoCours{
                             opacity: 0;
                         }
@@ -146,7 +147,9 @@
     .sessionBloc,
     .fleche_cours,
     .coursBloc,
-    article{
+    article,
+    .infoCours,
+    .contenu_cours{
         transition: all .5s ease-in-out;
     }
 }
