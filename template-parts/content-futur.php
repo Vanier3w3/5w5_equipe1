@@ -59,4 +59,8 @@
 	<footer class="entry-footer">
 		<?php /* time1_entry_footer(); */ ?>
 	</footer><!-- .entry-footer -->
+<<<<<<< HEAD
 </article><!-- #post-<?php the_ID(); ?> -->
+=======
+</article><!-- #post-<?php the_ID(); ?> -->
+>>>>>>> a668f360474323df1dd4d6c77afa575762617b08

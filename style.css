@@ -1,4 +1,5 @@
 @charset "UTF-8";
+<<<<<<< HEAD
 /*!
 Theme Name: time1
 Theme URI: http://underscores.me/
@@ -21,6 +22,30 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+=======
+/*!
+Theme Name: time1
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: time1
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+time1 is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+>>>>>>> a668f360474323df1dd4d6c77afa575762617b08
 */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -627,6 +652,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
+<<<<<<< HEAD
 /*.main-navigation {
 	display: block;
 	width: 100%;
@@ -699,6 +725,71 @@ textarea {
 		/*&:hover > a,
 		&.focus > a {
 		}
+=======
+.main-navigation {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+
+.main-navigation ul {
+  display: none;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  text-decoration: none;
+  justify-content: space-around;
+  padding-top: 400px;
+}
+
+.main-navigation ul ul {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  float: left;
+  position: absolute;
+  top: 100%;
+  left: -999em;
+  z-index: 99999;
+  text-decoration: none;
+  list-style: none;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.main-navigation ul ul ul {
+  left: -999em;
+  top: 0;
+  text-decoration: none;
+  list-style: none;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+  display: block;
+  left: auto;
+}
+
+.main-navigation ul ul a {
+  width: 200px;
+  text-decoration: none;
+  justify-content: space-between;
+  margin: 20px;
+  color: white;
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+  left: auto;
+}
+
+/*li {
+		position: relative;
+
+		/*&:hover > a,
+		&.focus > a {
+		}
+>>>>>>> a668f360474323df1dd4d6c77afa575762617b08
 	}*/
 /*a {
 		display: block;
@@ -771,6 +862,18 @@ textarea {
   margin-bottom: 10%;
   justify-content: center;
   margin-left: 48%;
+  background-color: transparent;
+  border: none;
+}
+
+.fleche:hover {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 690px) {
+  .custom-background {
+    rotate: rotate(180deg);
+  }
 }
 
 .logoM9 {
@@ -1012,7 +1115,11 @@ menu tablet
   }
 }
 
+<<<<<<< HEAD
 @media (min-width: 690px) and (max-width: 1200px) {
+=======
+@media (min-width: 695px) and (max-width: 1150px) {
+>>>>>>> a668f360474323df1dd4d6c77afa575762617b08
   #site-navigation button {
     display: none;
     background: transparent;
@@ -1026,7 +1133,25 @@ menu tablet
   }
 }
 
+<<<<<<< HEAD
 /* Posts and pages
+=======
+.titleP {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.titleE {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+/* Posts and pages
+>>>>>>> a668f360474323df1dd4d6c77afa575762617b08
 --------------------------------------------- */
 .sticky {
   display: block;
@@ -1262,6 +1387,7 @@ menu tablet
   text-align: justify;
 }
 
+<<<<<<< HEAD
 /*.entry-content:hover {
     transform: translateY(0);
     box-shadow:
@@ -1274,6 +1400,20 @@ menu tablet
         -10px 0 80px #f0f,
         10px 0 80px #0ff;
 }
+=======
+/*.entry-content:hover {
+    transform: translateY(0);
+    box-shadow:
+        inset 0 0 60px whitesmoke,
+        inset 20px 0 80px #f0f,
+        inset -20px 0 80px #0ff,
+        inset 20px 0 300px #f0f,
+        inset -20px 0 300px #0ff,
+        0 0 50px #fff,
+        -10px 0 80px #f0f,
+        10px 0 80px #0ff;
+}
+>>>>>>> a668f360474323df1dd4d6c77afa575762617b08
 */
 .entry-title {
   display: flex;
@@ -1332,6 +1472,7 @@ p {
   }
 }
 
+<<<<<<< HEAD
 /*body.home{
   
         width : 100vw;
@@ -1365,6 +1506,41 @@ p {
         }
     
     } 
+=======
+/*body.home{
+  
+        width : 100vw;
+        overflow-x :hidden;
+       
+    }
+    
+    body.home::after{
+        content: "";
+        position : absolute;
+        width: 100%;
+       
+        top : 0;
+        bottom :0;
+        left : 0;
+        right : 0;
+       
+    
+       z-index: -1;
+    }
+    
+    .home {
+        #primary {
+            width: 100vw;
+            margin : 0;
+    
+            header {
+               
+                text-align: center;
+            }
+        }
+    
+    } 
+>>>>>>> a668f360474323df1dd4d6c77afa575762617b08
     */
 /*.site-title {
     
@@ -1527,7 +1703,11 @@ p {
   scroll-behavior: auto;
 }
 
+<<<<<<< HEAD
 @media (min-width: 690px) and (max-width: 1200px) {
+=======
+@media (min-width: 695px) and (max-width: 1150px) {
+>>>>>>> a668f360474323df1dd4d6c77afa575762617b08
   .main-navigation {
     width: 100%;
     height: 15%;
@@ -1654,6 +1834,7 @@ p {
 .next {
   right: 20%;
   border-radius: 3px 0 0 3px;
+<<<<<<< HEAD
 }
 
 .prev {
@@ -1666,6 +1847,20 @@ p {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+=======
+}
+
+.prev {
+  left: 20%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+>>>>>>> a668f360474323df1dd4d6c77afa575762617b08
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -1724,7 +1919,11 @@ p {
   box-shadow: inset 0 0 60px whitesmoke, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
 }
 
+<<<<<<< HEAD
 /* etudiant
+=======
+/* etudiant
+>>>>>>> a668f360474323df1dd4d6c77afa575762617b08
 --------------------------------------------- */
 .conteneurE {
   display: block;
@@ -1904,6 +2103,7 @@ p {
 
 .conteneurE:hover {
   transform: translateY(0);
+<<<<<<< HEAD
   box-shadow: inset 0 0 60px whitesmoke, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
 }
 
@@ -1912,6 +2112,16 @@ p {
 /* footer
 --------------------------------------------- */
 /* cours
+=======
+  box-shadow: inset 0 0 60px whitesmoke, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+}
+
+/* footer
+--------------------------------------------- */
+/* page
+--------------------------------------------- */
+/* cours
+>>>>>>> a668f360474323df1dd4d6c77afa575762617b08
 --------------------------------------------- */
 #contenuPage {
   display: flex;
@@ -1933,7 +2143,11 @@ p {
 
 #contenuPage .sessionBloc:hover, #contenuPage .sessionBloc:focus {
   transform: translateY(0);
+<<<<<<< HEAD
   box-shadow: inset 0 0 60px whitesmoke, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+=======
+  box-shadow: inset 0 0 60px whitesmoke, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+>>>>>>> a668f360474323df1dd4d6c77afa575762617b08
 }
 
 #contenuPage .sessionBloc h1 {
@@ -1951,6 +2165,10 @@ p {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+<<<<<<< HEAD
+=======
+  width: 100%;
+>>>>>>> a668f360474323df1dd4d6c77afa575762617b08
 }
 
 #contenuPage .sessionBloc .coursBloc article {
@@ -2045,7 +2263,11 @@ p {
   }
 }
 
+<<<<<<< HEAD
 @media (min-width: 690px) and (max-width: 1200px) {
+=======
+@media (min-width: 695px) and (max-width: 1150px) {
+>>>>>>> a668f360474323df1dd4d6c77afa575762617b08
   #contenuPage .sessionBloc {
     width: 75%;
   }
@@ -2060,6 +2282,7 @@ p {
   transition: all .5s ease-in-out;
 }
 
+<<<<<<< HEAD
 /* futur
 --------------------------------------------- */
 .futur-stage figure {
@@ -2097,5 +2320,54 @@ a:hover {
 
 .titre {
   text-decoration: underline;
+=======
+/* futur
+--------------------------------------------- */
+/*.futur-stage  {
+    figure {
+        border-radius: 20px;
+    }
+}
+*/
+/*
+ul.liste li {
+    font-family: oxanium;
+    /* margin-left: -20%; 
+    text-align: left;
+    justify-content: left;
+}*/
+/*a {
+    text-decoration: underline;
+    color: #d3e2ff;
+}
+
+a:hover {
+    color: rgb(157, 189, 255);
+}
+
+.université, .imgUni {
+    border-radius: 20px;
+    ul {
+        figure {
+        border-radius: 20px;
+        }
+    }  
+}
+
+.liste,  .liste li, li a {
+    font-family: oxanium;
+    align-items: left;
+}
+
+.titre {
+    text-decoration: underline;
+}*/
+.entry-meta {
+  visibility: hidden;
+}
+
+.entry-footer {
+  visibility: hidden;
+>>>>>>> a668f360474323df1dd4d6c77afa575762617b08
 }
 /*# sourceMappingURL=style.css.map */

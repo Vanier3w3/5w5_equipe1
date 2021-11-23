@@ -15,7 +15,12 @@ get_header();
 
 			<header class="page-header">
 				<?php
+<<<<<<< HEAD
 				the_archive_title( '<h1 class="page-title">', '</h1>' );
+=======
+			
+				echo '<h1 class="titleE"> FUTUR </h1>';
+>>>>>>> a668f360474323df1dd4d6c77afa575762617b08
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
@@ -44,4 +49,8 @@ get_header();
 
 <?php
 get_sidebar();
+<<<<<<< HEAD
 get_footer();
+=======
+get_footer();
+>>>>>>> a668f360474323df1dd4d6c77afa575762617b08
