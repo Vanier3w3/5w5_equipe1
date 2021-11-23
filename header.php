@@ -29,12 +29,8 @@
 		<div class="site-branding">
 			<?php
 				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">	<?php the_custom_logo(); bloginfo( 'name' ); ?></a></h1>
+				<h1 class="site-title <?php echo(is_front_page())? 'accueilTitre': ''?>"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">	<?php the_custom_logo(); bloginfo( 'name' ); ?></a></h1>
 				<p class="sous-titre">TECHNIQUES D'INTÉGRATION MULTIMÉDIA</p>
-				
-				<?php
-		
-				?>
 				
 				<?php
 			
