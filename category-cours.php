@@ -29,18 +29,18 @@ get_header();
 				convertirTitreCours($propriete);
 				if($precedent != $propriete['session']):
 					if($precedent != 'XX'):
-				echo '<h1>session:'. $precedent . '</h1>';
+			
 				?>
 					</section>
 				<?php
 					endif;
 				?>
-					<section class="session_bloc">
+					<section class="sessionBloc">
 			<?php
-				endif;
-				get_template_part( 'template-parts/content', 'cours' );
-				$precedent = $propriete['session'];
-				
+			echo '<h1>session: '. $propriete['session'] . '</h1>';
+			endif;
+			get_template_part( 'template-parts/content', 'cours' );
+			$precedent = $propriete['session'];
 				
 			endwhile;
 			the_posts_navigation();
@@ -51,7 +51,7 @@ get_header();
 
 		endif;
 		?>
-
+</section>
 	</main><!-- #main -->
 
 <?php
@@ -65,3 +65,7 @@ function convertirTitreCours(&$propriete){
 	$propriete['session'] = substr($propriete['titre'], 4,1);
 	$propriete['typeCours'] = get_field('type_de_cours');
 }
+
+
+
+

@@ -11,17 +11,23 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
+		
+	
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
 				<?php
-				//the_archive_title( '<h1 class="page-title">', '</h1>' );
+				echo '<h1 class="titleP"> Projets </h1>'; 
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-			
+		
 			<div class="conteneurP">
 			
+			<a class="prev" onclick="controleFleche(-1)">&#10094;</a>
+  			<a class="next" onclick="controleFleche(1)">&#10095;</a>
+
+			<div class="caroussel">
 			
 			<?php
 			
@@ -41,7 +47,7 @@ get_header();
 		endif;
 		?>
 
-		
+	</div>	
 	</div>
 	</main><!-- #main -->
 

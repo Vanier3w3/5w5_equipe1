@@ -1,128 +1,221 @@
 .conteneurE{
-
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    display: block;
     margin: 0 auto;
-    width:80%;
-    //justify-content: space-around;
-    animation : anim-carte .5s both;
-    margin-bottom: 20%;
-    background-color: rgba(165,165,165,0.35);
-    border-radius:30px;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    justify-content: center;
+    width:50%;
+    overflow-x: scroll;
+    background-color: rgba(165, 165, 165, 0.35);
+        .caroussel{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+            
+            width: 200vw;
+            
+            .conteneur1{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               position: relative;
+               width: 15vw;
+              
+                .info
+                {
+                    width: 100%;
+                    padding: 40px;
     
-  .flip-card{
-      margin: 2%;
-      background-color: transparent;
-      width:150px;
-      height:150px;
-      perspective: 1000px;
-  }
-
-  .flip-card-inner{
-      position: relative;
-      width:100%;
-      height:100%;
-      text-align: center;
-      transition: transform 0.6s;
-      transform-style: preserve-3d;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-
-  .flip-card:hover .flip-card-inner{
-      transform: rotateY(180deg);
-  }
-
-  .flip-card-front, .flip-card-back{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-
-  .flip-card-front{
-      background-color: #bbb;
-      color: black;
-  }
-
-  .flip-card-back{
-      background-color: #050505;
-      color: white;
-      transform: rotateY(180deg);
-  }
-
-
-  a{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size:0.5rem;
-      animation: anim-texte2 .5s both;
+                   p{
+                       position: absolute;
+                   }
+                   h1{
+                    position: absolute;
+                    text-align: center;
+                    width: 65%;
+                    font-size: .8em;
+                    bottom: 20%;
+                    overflow-wrap: break-word;
+                   }
+                   img{
+                       width: 100%;
+                       
+                       
+                   }
+                }
+                .contenu
+                {
     
-  }
+                }
+            }
+           
+            
+        }
+      
+        @include mobile{
 
-  a:hover{
-      animation: anim-texte .5s both;
-  }
-}
+           
+            .caroussel{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+                        
+            .conteneur1{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               position: relative;
+               width: 100%;
+            }
+            .info
+                {
+                    width: 50%;
+                    padding: 40px;
+    
+                   p{
+                  
+                   }
+                   h1{
+                   
+                   }
+                   img{
+                       width: 50%;
+                       
+                       
+                   }
+                }
 
-
-.conteneurE:hover{
-    transform: translateY(0);
-    box-shadow:
-    inset 0 0 60px whitesmoke,
-    inset 20px 0 80px #f0f,
-    inset -20px 0 80px #0ff,
-    inset 20px 0 300px #f0f,
-    inset -20px 0 300px #0ff,
-    0 0 50px #fff,
-    -10px 0 80px #f0f,
-    10px 0 80px #0ff;
-    }
-
-@keyframes anim-carte {
-	0%{
-		opacity : 0;
-		transform : translateX(0) translateY(0);
-	}
-    50%{
-        opacity: .5;
-        transform : translateX(0) translateY(50px);
-    }
-	100%{
-		opacity: 1;
-		transform : translateX(0) translateY(100px);
-	}
-}
-
-
-@keyframes anim-texte {
-	0%{
-		opacity : 1;
-		
-	}
-    50%{
-        opacity: .5;
+        }
+        .next {
+           visibility: hidden;
         
-    }
-	100%{
-		opacity: 0;
-		
-	}
-}
+          }
+          
+          .prev {
+            visibility: hidden;
+              
+             
+            }
 
 
-@keyframes anim-texte2 {
-	0%{
-		opacity : 0;
-		transform : translateX(0) translateY(0);
-	}
-    50%{
-        opacity: .5;
-        transform : translateX(0) translateY(5px);
+
+
     }
-	100%{
-		opacity: 1;
-		transform : translateX(0) translateY(20px);
-	}
-}
+    }
+    
+    * {box-sizing:border-box}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      margin:0 auto;
+      //bottom: 10%;
+      width: auto;
+      margin-top: 20%;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 20%;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    .prev {
+        left: 20%;
+        border-radius: 3px 0 0 3px;
+      }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+    
+    
+    .conteneurE:hover {
+        transform: translateY(0);
+        box-shadow:
+            inset 0 0 60px whitesmoke,
+            inset 20px 0 80px #f0f,
+            inset -20px 0 80px #0ff,
+            inset 20px 0 300px #f0f,
+            inset -20px 0 300px #0ff,
+            0 0 50px #fff,
+            -10px 0 80px #f0f,
+            10px 0 80px #0ff;
+    }
+
+
+   
