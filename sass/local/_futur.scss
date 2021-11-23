@@ -20,7 +20,7 @@ a:hover {
     color: rgb(157, 189, 255);
 }
 
-.université {
+.université, .imgUni {
     border-radius: 20px;
     ul {
         figure {
@@ -29,15 +29,11 @@ a:hover {
     }  
 }
 
-.liste {
+.liste,  .liste li, li a {
     font-family: oxanium;
     align-items: left;
-    li {
-        font-family: oxanium;
-        align-items: left;
-        a {
-            font-family: oxanium;
-            align-items: left;
-        }
-    }
+}
+
+.titre {
+    text-decoration: underline;
 }
