@@ -55,7 +55,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Lors de la 5e session de l'étudiant, celui-ci devra entamer ses recherches à propos de son stage de fin d'étude d'une durée de 2 mois qui se déroulera lors de sa 6e session.</p>
+<p>Lors de la 5e session de l'étudiant, celui-ci devra entamer ses recherches à propos de son stage de fin d'étude d'une durée de 2 mois qui se déroulera lors de sa 6e session. </p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
