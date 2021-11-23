@@ -9,10 +9,9 @@
 @mixin column-width($numberColumns: 3) {
 	width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
 }
-<<<<<<< HEAD
 
 @mixin tablet {
-	@media (min-width : 695px){
+	@media (min-width : 690px) and (max-width : 1200px){
 		@content;
 	}
 }
@@ -32,5 +31,3 @@
 
 
 
-=======
->>>>>>> main
