@@ -15,11 +15,7 @@ get_header();
 
 			<header class="page-header">
 				<?php
-<<<<<<< HEAD
 				echo '<h1 class="page-title"> Grille de cours </h1>';
-=======
-				echo '<h1 class="titleP"> Grille de cours </h1>';
->>>>>>> a668f360474323df1dd4d6c77afa575762617b08
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->

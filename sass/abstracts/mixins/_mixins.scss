@@ -11,11 +11,7 @@
 }
 
 @mixin tablet {
-<<<<<<< HEAD
 	@media (min-width : 690px) and (max-width : 1200px){
-=======
-	@media (min-width : 695px)and( max-width:1150px){
->>>>>>> a668f360474323df1dd4d6c77afa575762617b08
 		@content;
 	}
 }
