@@ -7,24 +7,17 @@
  * @package time1
  */
 ?>
-<div class="conteneurP">
-<article class="flip-card" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<div class="flip-card-inner">
-<div class="flip-card-front">
-	<?php
-		the_post_thumbnail();
-	?>
-</div>
 
-<div class="flip-card-back">
-    
-     <h1><a href="<?php echo get_permalink() ?>"><?php the_title();?></a></h1>
-     <p><a href="<?php echo get_permalink() ?>"><?php the_archive_title();?></a></p>
-    <p><a href="<?php echo get_permalink() ?>"><?php the_author();?></a> </p>
-	<?php echo '<p>'. get_field('type_de_cours') . '</p>'; ?>
+<div class="conteneur1">
+	<div class="info">
+		<?php the_post_thumbnail ('thumbnail'); 
+		echo '<h1>' . get_the_title() . '</h1>';
+		?>
+	</div>
+	<div class="contenu">
+		<!--?php the_content();?-->
+	</div>
 
-</div>
-</div>
 
-</article><!-- #post-<?php the_ID(); ?> -->
+
 </div>

@@ -14,9 +14,20 @@
 
 get_header();
 ?>
- 
+ <link rel="shortcut icon" href="https://tympanus.net/Tutorials/CSSGlitchEffect/favicon.ico">
+		<link href="./Image Glitch Effect _ Demo 2 _ Codrops_files/css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./Image Glitch Effect _ Demo 2 _ Codrops_files/demo2.css">
 	<main id="primary" class="site-main">
-
+	
+	<div class="glitch glitch--style-1">
+	<div class="glitch__img"></div>
+	<div class="glitch__img"></div>
+	<div class="glitch__img"></div>
+	<div class="glitch__img"></div>
+	<div class="glitch__img"></div>
+</div>
+<script src="./Image Glitch Effect _ Demo 2 _ Codrops_files/demo.js"></script>
+<script src="./Image Glitch Effect _ Demo 2 _ Codrops_files/imagesloaded.pkgd.min.js"></script>
 		<?php
 		if ( have_posts() ) :
 
@@ -50,8 +61,11 @@ get_header();
 		endif;
 		?>
 
+
 	</main><!-- #main -->
 
 <?php
 get_sidebar();
 get_footer();
+
+
