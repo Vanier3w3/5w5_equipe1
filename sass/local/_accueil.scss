@@ -4,17 +4,11 @@
     flex-direction: column;
     margin:0 auto;
     background-color: rgba(165,165,165,0.35);
-<<<<<<< HEAD
-    width:50%;
-    border-radius:30px;
-    text-align: justify;
-=======
     width:60%;
     border-radius:30px;
     text-align: justify;
     padding: 2%;
     margin-bottom: 5%;
->>>>>>> main
     }
     
     .entry-content:hover{
@@ -41,11 +35,7 @@
     p{
     display:flex;
     font-family: oxanium;
-<<<<<<< HEAD
-    
-=======
     align-items: left;
->>>>>>> main
     }
     
     
@@ -55,17 +45,12 @@
     }
 
 
-<<<<<<< HEAD
     .site-title{
-=======
-    .titre1{
->>>>>>> main
         display:flex;
         width:18%;
         justify-content: center;
         align-content: center;
         margin: 0 auto;
-<<<<<<< HEAD
         margin-top:18%;
     }
 
@@ -306,14 +291,4 @@
           
             height: 15%;
         }
-=======
-        margin-top:23%;
-    }
-
-
-    // page de projets
-    article img {
-        height: 300px;
-        width: auto;
->>>>>>> main
     }
