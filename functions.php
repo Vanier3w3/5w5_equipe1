@@ -54,6 +54,8 @@ if ( ! function_exists( 'time1_setup' ) ) :
 			)
 		);
 
+		
+
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
@@ -144,6 +146,10 @@ function time1_scripts() {
 	wp_style_add_data( 'time1-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'time1-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	
+	// code rajouté pour slider
+	wp_register_script( 'time1-navigation', get_template_directory_uri() . '/js/slider.js', array(), filemtime(get_template_directory() . "/js/slider.js"), true );
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -195,3 +201,5 @@ function extraire_projets($query) {
     }  
 }
 add_action( "pre_get_posts", "extraire_projets" );
+
+
