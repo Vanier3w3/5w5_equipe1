@@ -20,22 +20,41 @@ a:hover {
     color: rgb(157, 189, 255);
 }
 
-.université {
+.université, .imgUni {
     border-radius: 20px;
     ul {
-        figure {
-        border-radius: 20px;
+        li {
+            figure {
+                border-radius: 20px;
+            }
         }
     }  
 }
 
-.liste {
-    font-family: oxanium;
+.liste, .liste li, li a, .imgUni {
+    font-family: oxanium !important;
     align-items: left;
-    li {
-        a {
-            font-family: oxanium;
-            align-items: left;
-        }
-    }
+}
+
+.titre {
+    text-decoration: underline;
+}
+
+.entry-meta{
+    visibility: hidden;
+}
+
+.entry-footer{
+    visibility: hidden;
+}
+
+
+
+@include mobile {
+
+}
+
+
+@include tablet {
+    
 }
