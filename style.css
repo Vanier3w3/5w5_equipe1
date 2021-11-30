@@ -2082,50 +2082,61 @@ p {
 
 /* futur
 --------------------------------------------- */
-/*.futur-stage  {
-    figure {
-        border-radius: 20px;
-    }
+.futur-stage figure {
+  border-radius: 20px;
 }
-*/
-/*
+
 ul.liste li {
-    font-family: oxanium;
-    /* margin-left: -20%; 
-    text-align: left;
-    justify-content: left;
-}*/
-/*a {
-    text-decoration: underline;
-    color: #d3e2ff;
+  font-family: oxanium;
+  /* margin-left: -20%; */
+  text-align: left;
+  justify-content: left;
+}
+
+a {
+  text-decoration: underline;
+  color: #d3e2ff;
 }
 
 a:hover {
-    color: rgb(157, 189, 255);
+  color: #9dbdff;
 }
 
 .université, .imgUni {
-    border-radius: 20px;
-    ul {
-        figure {
-        border-radius: 20px;
-        }
-    }  
+  border-radius: 20px;
 }
 
-.liste,  .liste li, li a {
-    font-family: oxanium;
-    align-items: left;
+.université ul li figure, .imgUni ul li figure {
+  border-radius: 20px;
+}
+
+.imgFutur {
+  border-radius: 20px;
+}
+
+/* .imgFutur:hover {
+    background-color: rgba(157, 190, 255, 0.3);
+} */
+.liste, .liste li, li a {
+  font-family: oxanium;
+  align-items: left;
 }
 
 .titre {
-    text-decoration: underline;
-}*/
+  text-decoration: underline;
+}
+
 .entry-meta {
   visibility: hidden;
 }
 
 .entry-footer {
   visibility: hidden;
+}
+
+.entry-content {
+  width: 70%;
+  padding: 2%;
+  margin-bottom: 10%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,18 +2,22 @@
 <p class="has-medium-font-size">Que réserve-t-on aux finissants ?</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>Suite aux stages que les finissants auront réalisés, de nombreux d'entre eux auront l'opportunité de rejoindre la compagnie dans laquelle ils y ont passés leur stage de fin de session. Durant le parcours scolaire, de l'information sera également donnée par les professeurs afin de montrer les nombreux emplois possibles suite au DEC de la Technique d'Intégration Multimédia.</p>
+<!-- wp:paragraph {"fontSize":"normal"} -->
+<p class="has-normal-font-size">Suite aux stages que les finissants auront réalisés, de nombreux d'entre eux auront l'opportunité de rejoindre la compagnie dans laquelle ils y ont passés leur stage de fin de session. Durant le parcours scolaire, de l'information sera également donnée par les professeurs afin de montrer les nombreux emplois possibles suite au DEC de la Technique d'Intégration Multimédia.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"align":"left"} -->
-<p class="has-text-align-left">La majorité des finissants se dirigent vers les professions suivantes:</p>
+<!-- wp:paragraph {"align":"left","fontSize":"normal"} -->
+<p class="has-text-align-left has-normal-font-size">La majorité des finissants se dirigent vers les professions suivantes:</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list {"className":"liste"} -->
-<ul class="liste"><li>Intégrateur ou programmeur multimédia</li><li>Développeur Web</li><li>Concepteurs de jeux interactifs</li><li>Développeur d’applications mobiles</li><li>Chargé de projet Web</li><li>Animateur 2D/3D</li><li>Designer/infographiste</li><li>Webmestre</li></ul>
+<!-- wp:list {"className":"liste","fontSize":"normal"} -->
+<ul class="liste has-normal-font-size"><li>Intégrateur ou programmeur multimédia</li><li>Développeur Web</li><li>Concepteurs de jeux interactifs</li><li>Développeur d’applications mobiles</li><li>Chargé de projet Web</li><li>Animateur 2D/3D</li><li>Designer/infographiste</li><li>Webmestre</li></ul>
 <!-- /wp:list -->
 
-<!-- wp:paragraph -->
-<p>75% des diplômés qui se sont dirigés vers le marché du travail y ont trouvé un emploi lié à leur formation.</p>
+<!-- wp:paragraph {"fontSize":"normal"} -->
+<p class="has-normal-font-size">75% des diplômés qui se sont dirigés vers le marché du travail y ont trouvé un emploi lié à leur formation.</p>
 <!-- /wp:paragraph -->
+
+<!-- wp:gallery {"ids":[665,638,640],"linkTo":"none","className":"wp-block-image imgFutur"} -->
+<figure class="wp-block-gallery columns-3 is-cropped wp-block-image imgFutur"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img src="http://localhost:8080/duplication/wp-content/uploads/2021/11/DSC0228-150x150-1.png" alt="" data-id="665" data-full-url="http://localhost:8080/duplication/wp-content/uploads/2021/11/DSC0228-150x150-1.png" data-link="http://localhost:8080/duplication/dsc0228-150x150/" class="wp-image-665"/></figure></li><li class="blocks-gallery-item"><figure><img src="http://localhost:8080/duplication/wp-content/uploads/2021/11/DSC0333-150x150-1.png" alt="" data-id="638" data-full-url="http://localhost:8080/duplication/wp-content/uploads/2021/11/DSC0333-150x150-1.png" data-link="http://localhost:8080/duplication/dsc0333-150x150/" class="wp-image-638"/></figure></li><li class="blocks-gallery-item"><figure><img src="http://localhost:8080/duplication/wp-content/uploads/2021/11/DSC0300-e1512155821276-768x528-1.png" alt="" data-id="640" data-full-url="http://localhost:8080/duplication/wp-content/uploads/2021/11/DSC0300-e1512155821276-768x528-1.png" data-link="http://localhost:8080/duplication/dsc0300-e1512155821276-768x528/" class="wp-image-640"/></figure></li></ul></figure>
+<!-- /wp:gallery -->
