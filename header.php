@@ -28,11 +28,11 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'time1' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
+		<div class="site-branding <?php echo ((is_front_page()) ? 'headerAccueil' : '')?>">
 			<?php
 			
 				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php the_custom_logo(); ?>	<img src="http://localhost:8888/siteSab/wp-content/uploads/2021/11/cropped-LogoTimSiteE-e1636483598789-4.png" class="titre1" style="background-size:30px;"> <?php bloginfo( 'name' ); ?></img></a></h1>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php the_custom_logo(); ?> <?php bloginfo( 'name' ); ?></img></a></h1>
 				<p class="sous-titre">TECHNIQUES D'INTÉGRATION MULTIMÉDIA</p>
 				
 				<?php
