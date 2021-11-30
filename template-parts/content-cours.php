@@ -19,3 +19,4 @@ global $propriete;
 		<?php echo the_content()?>
 	</div>
 </article><!-- #post-<?php the_ID(); ?> -->
+

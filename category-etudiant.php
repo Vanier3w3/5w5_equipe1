@@ -4,37 +4,61 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package theme-sc
+ * @package time1
  */
 
- get_header();
+get_header();
 ?>
- <main id="primary" class="site-main">
-	<?php if(have_posts()) :?>
 
-	<header class="page-header">
+<main id="primary" class="site-main">
+<?php if ( have_posts() ) : ?>
+
+<header class="page-header">
 	<?php
+	
 
-	//the_archive_title('<h1 class="page-title">', '</h1>');
-	//echo '<h1 class="page-title">' .  single_cat_title('', false) . '</h1>';
-	//the_archive_description('<div class="archive-description">', '</div>');
-
+	echo '<h1 class="titleE"> Vie étudiante </h1>'; 
+	//the_archive_description( '<div class="archive-description">', '</div>' );
 	?>
-</header>
+</header><!-- .page-header -->
 
 <div class="conteneurE">
-<?php 
-while (have_posts()) :
-    the_post(); ?>
-    <?php get_template_part('template-parts/content', 'etudiant'); ?>
-   <?php endwhile; ?>
 
-   </section>
+<a class="prev" onclick="controleFleche(-1)">&#10094;</a>
+  <a class="next" onclick="controleFleche(1)">&#10095;</a>
 
-   <?php endif;?>
+<div class="caroussel">
 
-   </main>
+<?php
+
+while ( have_posts() ) :
+	the_post();
+	get_template_part( 'template-parts/content', 'projets' );
+	
+endwhile; ?>
+
+<?php
+the_posts_navigation();
+
+else :
+	
+	get_template_part( 'template-parts/content', 'none' );
+
+endif;
+?>
+
+</div>	
 </div>
-   <?php
-   get_sidebar();
-   get_footer();
+</main><!-- #main -->
+
+
+
+
+   </div>
+ 
+
+
+
+<?php
+get_sidebar();
+get_footer();

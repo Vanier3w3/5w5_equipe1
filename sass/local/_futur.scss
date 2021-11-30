@@ -31,8 +31,16 @@ a:hover {
     }  
 }
 
-.liste, .liste li, li a, .imgUni {
-    font-family: oxanium !important;
+.imgFutur {
+    border-radius: 20px;
+}
+
+/* .imgFutur:hover {
+    background-color: rgba(157, 190, 255, 0.3);
+} */
+
+.liste,  .liste li, li a {
+    font-family: oxanium;
     align-items: left;
 }
 
@@ -46,6 +54,12 @@ a:hover {
 
 .entry-footer{
     visibility: hidden;
+}
+
+.entry-content {
+    width: 70%;
+    padding: 2%;
+    margin-bottom: 10%;
 }
 
 
