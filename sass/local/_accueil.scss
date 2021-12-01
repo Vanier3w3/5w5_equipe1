@@ -80,10 +80,16 @@ p {
 #primary-menu {
  
     justify-content: center;
-    margin-top: 5%;
+   // margin-top: 5%;
 }
 
 @include mobile{
+
+    body .custom-background{
+        background-image: url(http://localhost:8888/siteSab/wp-content/uploads/2021/11/260016931_167694788879969_9089349859362275267_n.png) !important;
+    }
+
+
     #primary-menu
     {
        position: relative;
@@ -269,7 +275,9 @@ p {
 }
 
 .page-title {
-    margin-left: 6%;
+  
+    display: flex;
+    justify-content: center;
 }
 
 .menu-brands {

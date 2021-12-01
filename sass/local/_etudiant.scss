@@ -2,11 +2,13 @@
     display: block;
     margin: 0 auto;
     margin-bottom: 10%;
-    margin-top: 10%;
+    margin-top: 5%;
     justify-content: center;
-    width:50%;
+    width:70%;
     overflow-x: scroll;
     background-color: rgba(165, 165, 165, 0.35);
+  
+    border-radius: 30px;
         .caroussel{
             display: grid;
             grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
@@ -18,7 +20,8 @@
                justify-content: center;
                align-items: center;
                position: relative;
-               width: 15vw;
+               width: 18vw;
+               justify-content: space-between;
               
                 .info
                 {
@@ -29,16 +32,17 @@
                        position: absolute;
                    }
                    h1{
-                    position: absolute;
-                    text-align: center;
-                    width: 65%;
-                    font-size: .8em;
-                    bottom: 20%;
-                    overflow-wrap: break-word;
+                       position: absolute;
+                       text-align: center;
+                       width: 65%;
+                       font-size: .8em;
+                       bottom: 20%;
+                       overflow-wrap: break-word;
+                       visibility: hidden;
                    }
                    img{
                        width: 100%;
-                       
+                       border-radius: 30px;
                        
                    }
                 }
@@ -53,7 +57,9 @@
       
         @include mobile{
 
-           
+          body.custom-background{
+            background-image: url(http://localhost:8888/siteSab/wp-content/uploads/2021/11/260016931_167694788879969_9089349859362275267_n.png);
+        }
             .caroussel{
             display: flex;
             flex-direction: column;
@@ -215,7 +221,10 @@
             0 0 50px #fff,
             -10px 0 80px #f0f,
             10px 0 80px #0ff;
+
+          
     }
 
 
-   
+  
+

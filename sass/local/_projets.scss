@@ -2,11 +2,12 @@
 display: block;
 margin: 0 auto;
 justify-content: center;
-width:50%;
+width:70%;
 margin-bottom: 10%;
-margin-top: 10%;
+margin-top: 5%;
 overflow-x: scroll;
 background-color: rgba(165, 165, 165, 0.35);
+border-radius: 30px;
     .caroussel{
         display: grid;
         grid-template-columns: auto auto auto auto auto auto;
@@ -19,7 +20,7 @@ background-color: rgba(165, 165, 165, 0.35);
            justify-content: center;
            align-items: center;
            position: relative;
-           width: 15vw;
+           width: 18vw;
           
             .info
             {
@@ -36,10 +37,11 @@ background-color: rgba(165, 165, 165, 0.35);
                 font-size: .8em;
                 bottom: 20%;
                 overflow-wrap: break-word;
+                visibility: hidden;
                }
                img{
                    width: 100%;
-                   
+                   border-radius: 30px;
                    
                }
             }
@@ -53,7 +55,9 @@ background-color: rgba(165, 165, 165, 0.35);
     }
   
     @include mobile{
-
+      body.custom-background{
+        background-image: url(http://localhost:8888/siteSab/wp-content/uploads/2021/11/260016931_167694788879969_9089349859362275267_n.png);
+    }
            
         .caroussel{
         display: flex;

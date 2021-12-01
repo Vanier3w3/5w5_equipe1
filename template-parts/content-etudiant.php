@@ -16,6 +16,3 @@ global $tPropriété;
 ?></div><div class="flip-card-back"></div></div></article></div>
 
 
-<section class="prof">
-    
-</section>

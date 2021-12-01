@@ -684,62 +684,6 @@ textarea {
   left: auto;
 }
 
-/*li {
-		position: relative;
-
-		/*&:hover > a,
-		&.focus > a {
-		}
-	}*/
-/*a {
-		display: block;
-		text-decoration: none;
-		
-	}*/
-/*.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a,
-	.current-menu-ancestor > a {
-	}*/
-/*}*/
-/* Small menu. */
-/*.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-
-	.menu-toggle {
-		display: none;
-	}
-
-	.main-navigation ul {
-		display: flex;
-	}
-}
-
-.comment-navigation,
-.posts-navigation,
-.post-navigation {
-
-	.site-main & {
-		margin: 0 0 1.5em;
-	}
-
-	.nav-links {
-		display: flex;
-	}
-
-	.nav-previous {
-		flex: 1 0 50%;
-	}
-
-	.nav-next {
-		text-align: end;
-		flex: 1 0 50%;
-	}
-}*/
 .main-navigation ul {
   display: flex;
   list-style: none;
@@ -758,8 +702,7 @@ textarea {
 
 .fleche {
   display: flex;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 5%;
   justify-content: center;
   margin-left: 48%;
   background-color: transparent;
@@ -1337,10 +1280,12 @@ p {
 
 #primary-menu {
   justify-content: center;
-  margin-top: 5%;
 }
 
 @media (max-width: 690px) {
+  body .custom-background {
+    background-image: url(http://localhost:8888/siteSab/wp-content/uploads/2021/11/260016931_167694788879969_9089349859362275267_n.png) !important;
+  }
   #primary-menu {
     position: relative;
   }
@@ -1513,7 +1458,8 @@ p {
 }
 
 .page-title {
-  margin-left: 6%;
+  display: flex;
+  justify-content: center;
 }
 
 .menu-brands {
@@ -1564,11 +1510,12 @@ p {
   display: block;
   margin: 0 auto;
   justify-content: center;
-  width: 50%;
+  width: 70%;
   margin-bottom: 10%;
-  margin-top: 10%;
+  margin-top: 5%;
   overflow-x: scroll;
   background-color: rgba(165, 165, 165, 0.35);
+  border-radius: 30px;
 }
 
 .conteneurP .caroussel {
@@ -1582,7 +1529,7 @@ p {
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 15vw;
+  width: 18vw;
 }
 
 .conteneurP .caroussel .conteneur1 .info {
@@ -1601,13 +1548,18 @@ p {
   font-size: .8em;
   bottom: 20%;
   overflow-wrap: break-word;
+  visibility: hidden;
 }
 
 .conteneurP .caroussel .conteneur1 .info img {
   width: 100%;
+  border-radius: 30px;
 }
 
 @media (max-width: 690px) {
+  .conteneurP body.custom-background {
+    background-image: url(http://localhost:8888/siteSab/wp-content/uploads/2021/11/260016931_167694788879969_9089349859362275267_n.png);
+  }
   .conteneurP .caroussel {
     display: flex;
     flex-direction: column;
@@ -1747,11 +1699,12 @@ p {
   display: block;
   margin: 0 auto;
   margin-bottom: 10%;
-  margin-top: 10%;
+  margin-top: 5%;
   justify-content: center;
-  width: 50%;
+  width: 70%;
   overflow-x: scroll;
   background-color: rgba(165, 165, 165, 0.35);
+  border-radius: 30px;
 }
 
 .conteneurE .caroussel {
@@ -1765,7 +1718,8 @@ p {
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 15vw;
+  width: 18vw;
+  justify-content: space-between;
 }
 
 .conteneurE .caroussel .conteneur1 .info {
@@ -1784,13 +1738,18 @@ p {
   font-size: .8em;
   bottom: 20%;
   overflow-wrap: break-word;
+  visibility: hidden;
 }
 
 .conteneurE .caroussel .conteneur1 .info img {
   width: 100%;
+  border-radius: 30px;
 }
 
 @media (max-width: 690px) {
+  .conteneurE body.custom-background {
+    background-image: url(http://localhost:8888/siteSab/wp-content/uploads/2021/11/260016931_167694788879969_9089349859362275267_n.png);
+  }
   .conteneurE .caroussel {
     display: flex;
     flex-direction: column;
@@ -1926,8 +1885,132 @@ p {
 
 /* footer
 --------------------------------------------- */
+#secondary {
+  margin-top: 8%;
+}
+
 /* page
 --------------------------------------------- */
+.headerPage .site-title {
+  display: flex;
+  width: 10%;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.headerPage .sous-titre {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  animation: animStitre 1.5s infinite;
+}
+
+.headerPage #primary-menu {
+  justify-content: center;
+}
+
+.headerPage .fleche {
+  margin-bottom: 2%;
+}
+
+.headerPage .page-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.prof {
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  width: 70%;
+  margin-bottom: 10%;
+  margin-top: 5%;
+  overflow-x: scroll;
+  background-color: rgba(165, 165, 165, 0.35);
+  grid-template-columns: auto auto auto auto auto auto;
+  border-radius: 30px;
+}
+
+.prof img {
+  margin: 20px;
+  border-radius: 30px;
+}
+
+.prof .imgProf {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 300px;
+}
+
+.proff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prof:hover {
+  transform: translateY(0);
+  box-shadow: inset 0 0 60px whitesmoke, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+}
+
+@media (max-width: 690px) {
+  body.custom-background {
+    background-image: url(http://localhost:8888/siteSab/wp-content/uploads/2021/11/260016931_167694788879969_9089349859362275267_n.png);
+  }
+  .prof {
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    width: 70%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    overflow-x: scroll;
+    background-color: rgba(165, 165, 165, 0.35);
+    grid-template-columns: auto auto auto auto auto auto;
+    border-radius: 30px;
+  }
+  .prof img {
+    margin: 20px;
+    border-radius: 30px;
+  }
+  .prof .imgProf {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    justify-content: space-between;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.proff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerFleche {
+  display: none;
+  visibility: hidden;
+}
+
+.fleche {
+  display: flex;
+  margin-top: 5%;
+  justify-content: center;
+  margin-left: 48%;
+  background-color: transparent;
+  border: none;
+}
+
 /* cours
 --------------------------------------------- */
 #contenuPage {
@@ -2028,6 +2111,9 @@ p {
 }
 
 @media (max-width: 690px) {
+  #contenuPage body.custom-background {
+    background-image: url(http://localhost:8888/siteSab/wp-content/uploads/2021/11/260016931_167694788879969_9089349859362275267_n.png);
+  }
   #contenuPage .sessionBloc {
     width: 90%;
   }
