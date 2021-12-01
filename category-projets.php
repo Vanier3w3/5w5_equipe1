@@ -22,33 +22,40 @@ get_header();
 				?>
 			</header><!-- .page-header -->
 		
-			<div class="conteneurP">
-			
-			<a class="prev" onclick="controleFleche(-1)">&#10094;</a>
-  			<a class="next" onclick="controleFleche(1)">&#10095;</a>
-
-			<div class="caroussel">
-			
-			<?php
-			
-			while ( have_posts() ) :
-				the_post();
-                get_template_part( 'template-parts/content', 'projets' );
+			<div id="contenuPage">
+				<nav class="boutton">
+					<a id="prev">&#10094;</a>
+					<a id="next">&#10095;</a>
+				</nav>
 				
-			endwhile; ?>
-			
-			<?php
-			the_posts_navigation();
-            
-            else :
-                
-                get_template_part( 'template-parts/content', 'none' );
+				<div class="conteneurP">
+				<?php
+				$nbPost = 0;
+				$postMax = 12;
+				while ( have_posts() ) :
+					the_post();
+					if($nbPost == 0){
+						echo '<div class="caroussel">';
+					}
+					++$nbPost;
+					get_template_part( 'template-parts/content', 'projets' );
+					if($nbPost == $postMax){
+						$nbPost = 0;
+						echo '</div>';
+					}
+				endwhile; ?>
+				
+				<?php
+				the_posts_navigation();
+				
+				else :
+					
+					get_template_part( 'template-parts/content', 'none' );
 
-		endif;
-		?>
-
-	</div>	
-	</div>
+			endif;
+			?>
+				</div>
+			</div>
 	</main><!-- #main -->
 
 <?php

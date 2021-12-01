@@ -1,107 +1,122 @@
-.conteneurP{
-display: block;
-margin: 0 auto;
-justify-content: center;
-width:50%;
-margin-bottom: 10%;
-margin-top: 10%;
-overflow-x: scroll;
-background-color: rgba(165, 165, 165, 0.35);
-    .caroussel{
-        display: grid;
-        grid-template-columns: auto auto auto auto auto auto;
-        width: 100vw;
-        
-        
-
-        .conteneur1{
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           position: relative;
-           width: 15vw;
-          
-            .info
-            {
-                width: 100%;
-                padding: 40px;
-
-               p{
-                   position: absolute;
-               }
-               h1{
-                position: absolute;
-                text-align: center;
-                width: 65%;
-                font-size: .8em;
-                bottom: 20%;
-                overflow-wrap: break-word;
-               }
-               img{
-                   width: 100%;
-                   
-                   
-               }
-            }
-            .contenu
-            {
-
-            }
-        }
-       
-        
-    }
-  
-    @include mobile{
-
-           
-        .caroussel{
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-                    
-        .conteneur1{
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           position: relative;
-           width: 100%;
-        }
-        .info
-            {
-                width: 50%;
-                padding: 40px;
-
-               p{
-              
-               }
-               h1{
-               
-               }
-               img{
-                   width: 50%;
-                   
-                   
-               }
-            }
-
-    }
-    .next {
-     visibility: hidden;
-
-    
-      }
-      
-      .prev {
-        visibility: hidden;
-          
-         
-        }
-
-
-    }
-
+#contenuPage{
+	position: relative;
+	nav.boutton {
+		display: flex;
+		z-index: 2;
+		position: absolute;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 70%;
+		top: 50%;
+	}
+	
+	.conteneurP{
+		z-index: 1;
+		display: flex;
+		flex-direction: row;
+		width:70%;
+		background-color: rgba(165, 165, 165, 0.35);
+		// clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		overflow-x: hidden;
+		border-radius: 30px;
+	
+		.caroussel{
+			display: grid;
+			grid-template-columns: auto auto auto auto;
+			grid-template-rows: 33% 33% 33%;
+			width: 100%;
+			transition: transform 1s ease-in-out;
+	
+			.conteneur1{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+				width: 17.5vw;
+	
+				.info
+				{
+					width: 100%;
+					padding: 40px;
+	
+				   p{
+					   position: absolute;
+				   }
+				   h1{
+					position: absolute;
+					text-align: center;
+					width: 65%;
+					font-size: .8em;
+					bottom: 20%;
+					overflow-wrap: break-word;
+				   }
+				   img{
+					   width: 100%;
+					   
+					   
+				   }
+				}
+				.contenu
+				{
+	
+				}
+			}
+		   
+			
+		}
+	  
+		@include mobile{
+	
+			   
+			.caroussel{
+			display: flex;
+			flex-direction: column;
+			width: 90%;
+						
+			.conteneur1{
+			   display: flex;
+			   justify-content: center;
+			   align-items: center;
+			   position: relative;
+			   width: 100%;
+			}
+			.info
+				{
+					width: 50%;
+					padding: 40px;
+	
+				   p{
+				  
+				   }
+				   h1{
+				   
+				   }
+				   img{
+					   width: 50%;
+					   
+					   
+				   }
+				}
+	
+		}
+		.next {
+		 visibility: hidden;
+	
+		
+		  }
+		  
+		  .prev {
+			visibility: hidden;
+			  
+			 
+			}
+	
+	
+		}
+	
+	}
 }
+
 
 
 
