@@ -1,103 +1,122 @@
-.conteneurP{
-display: block;
-margin: 0 auto;
-justify-content: center;
-width:70%;
-margin-bottom: 10%;
-margin-top: 5%;
-overflow-x: scroll;
-background-color: rgba(165, 165, 165, 0.35);
-border-radius: 30px;
-    .caroussel{
-        display: grid;
-        grid-template-columns: auto auto auto auto auto auto;
-        width: 100vw;
-        
-        
-
-        .conteneur1{
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           position: relative;
-           width: 18vw;
-          
-            .info
-            {
-                width: 100%;
-                padding: 40px;
-
-               p{
-                   position: absolute;
-               }
-               h1{
-                position: absolute;
-                text-align: center;
-                width: 65%;
-                font-size: .8em;
-                bottom: 20%;
-                overflow-wrap: break-word;
-                visibility: hidden;
-               }
-               img{
-                   width: 100%;
-                   border-radius: 30px;
-                   
-               }
-            }
-            
-        }
-       
-        
-    }
-  
-    @include mobile{
-      body.custom-background{
-        background-image: url(http://localhost:8888/siteSab/wp-content/uploads/2021/11/260016931_167694788879969_9089349859362275267_n.png);
-    }
-           
-        .caroussel{
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-                    
-        .conteneur1{
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           position: relative;
-           width: 100%;
-        }
-        .info
-            {
-                width: 50%;
-                padding: 40px;
-
-             
-               img{
-                   width: 50%;
-                   
-                   
-               }
-            }
-
-    }
-    .next {
-     visibility: hidden;
-
-    
-      }
-      
-      .prev {
-        visibility: hidden;
-          
-         
-        }
-
-
-    }
-
+#contenuPage{
+	position: relative;
+	nav.boutton {
+		display: flex;
+		z-index: 2;
+		position: absolute;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 70%;
+		top: 50%;
+	}
+	
+	.conteneurP{
+		z-index: 1;
+		display: flex;
+		flex-direction: row;
+		width:70%;
+		background-color: rgba(165, 165, 165, 0.35);
+		// clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		overflow-x: hidden;
+		border-radius: 30px;
+	
+		.caroussel{
+			display: grid;
+			grid-template-columns: auto auto auto auto;
+			grid-template-rows: 33% 33% 33%;
+			width: 100%;
+			transition: transform 1s ease-in-out;
+	
+			.conteneur1{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+				width: 17.5vw;
+	
+				.info
+				{
+					width: 100%;
+					padding: 40px;
+	
+				   p{
+					   position: absolute;
+				   }
+				   h1{
+					position: absolute;
+					text-align: center;
+					width: 65%;
+					font-size: .8em;
+					bottom: 20%;
+					overflow-wrap: break-word;
+				   }
+				   img{
+					   width: 100%;
+					   
+					   
+				   }
+				}
+				.contenu
+				{
+	
+				}
+			}
+		   
+			
+		}
+	  
+		@include mobile{
+	
+			   
+			.caroussel{
+			display: flex;
+			flex-direction: column;
+			width: 90%;
+						
+			.conteneur1{
+			   display: flex;
+			   justify-content: center;
+			   align-items: center;
+			   position: relative;
+			   width: 100%;
+			}
+			.info
+				{
+					width: 50%;
+					padding: 40px;
+	
+				   p{
+				  
+				   }
+				   h1{
+				   
+				   }
+				   img{
+					   width: 50%;
+					   
+					   
+				   }
+				}
+	
+		}
+		.next {
+		 visibility: hidden;
+	
+		
+		  }
+		  
+		  .prev {
+			visibility: hidden;
+			  
+			 
+			}
+	
+	
+		}
+	
+	}
 }
+
 
 
 

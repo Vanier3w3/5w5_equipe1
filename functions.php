@@ -148,7 +148,8 @@ function time1_scripts() {
 	wp_enqueue_script( 'time1-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 	
 	// code rajouté pour slider
-	wp_register_script( 'time1-navigation', get_template_directory_uri() . '/js/slider.js', array(), filemtime(get_template_directory() . "/js/slider.js"), true );
+	wp_register_script( 'time1-slider', get_template_directory_uri() . '/js/slider.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'time1-slider' );
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

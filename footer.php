@@ -40,25 +40,4 @@
 <?php wp_footer(); ?>
 
 </body>
-
-<script>
-
-
-/*
-
-let caroussel = document.getElementsByClassName('caroussel');
-
-
-
-
-function controleFleche(m){
-	console.log(caroussel);
-    caroussel.style.transform = "translateX(" + (m*100) + "vw)"
-	
-}
-
-*/
-
-</script>
-
 </html>
