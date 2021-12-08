@@ -1,12 +1,23 @@
+////////////////////////////////FORMAT DESKTOP ETUDIANTS/////////////////////////////////////////
+
+@include desktop{
+
+    #site-navigation button {
+        display: none;
+        background: transparent;
+    }
+
 .conteneurE{
     display: block;
     margin: 0 auto;
     margin-bottom: 10%;
-    margin-top: 10%;
+    margin-top: 5%;
     justify-content: center;
-    width:50%;
+    width:70%;
     overflow-x: scroll;
     background-color: rgba(165, 165, 165, 0.35);
+  
+    border-radius: 30px;
         .caroussel{
             display: grid;
             grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
@@ -18,7 +29,8 @@
                justify-content: center;
                align-items: center;
                position: relative;
-               width: 15vw;
+               //width: 18vw;
+               justify-content: space-between;
               
                 .info
                 {
@@ -29,181 +41,177 @@
                        position: absolute;
                    }
                    h1{
-                    position: absolute;
-                    text-align: center;
-                    width: 65%;
-                    font-size: .8em;
-                    bottom: 20%;
-                    overflow-wrap: break-word;
+                       position: absolute;
+                       text-align: center;
+                       width: 65%;
+                       font-size: .8em;
+                       bottom: 20%;
+                       overflow-wrap: break-word;
+                       visibility: hidden;
                    }
                    img{
                        width: 100%;
-                       
+                       border-radius: 30px;
                        
                    }
                 }
-                .contenu
-                {
-    
-                }
+               
             }
            
             
         }
       
-        @include mobile{
+      }
+    }
 
-           
-            .caroussel{
-            display: flex;
-            flex-direction: column;
-            width: 90%;
-                        
+/////////////////FORMAT TABLETTE //////////////////////////////////////////
+
+
+@include tablet{
+    #site-navigation button {
+        display: none;
+        background: transparent;
+    }
+
+
+.conteneurE{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    justify-content: center;
+    width:70%;
+    overflow-x: scroll;
+    background-color: rgba(165, 165, 165, 0.35);
+  
+    border-radius: 30px;
+        .caroussel{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+            
+            width: 200vw;
+            
             .conteneur1{
                display: flex;
                justify-content: center;
                align-items: center;
                position: relative;
-               width: 100%;
-            }
-            .info
+               width: 23vw;
+               justify-content: space-between;
+              
+                .info
                 {
-                    width: 50%;
+                    width: 100%;
                     padding: 40px;
     
                    p{
-                  
+                       position: absolute;
                    }
                    h1{
-                   
+                       position: absolute;
+                       text-align: center;
+                       width: 65%;
+                       font-size: .8em;
+                       bottom: 20%;
+                       overflow-wrap: break-word;
+                       visibility: hidden;
                    }
                    img{
-                       width: 50%;
-                       
+                       width: 100%;
+                       border-radius: 30px;
                        
                    }
                 }
-
-        }
-        .next {
-           visibility: hidden;
-        
-          }
-          
-          .prev {
-            visibility: hidden;
-              
-             
+               
             }
-
-
-
-
-    }
-    }
-    
-    * {box-sizing:border-box}
-    
-    /* Slideshow container */
-    .slideshow-container {
-      max-width: 1000px;
-      position: relative;
-      margin: auto;
-    }
-    
-    /* Hide the images by default */
-    .mySlides {
-      display: none;
-    }
-    
-    /* Next & previous buttons */
-    .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      margin:0 auto;
-      //bottom: 10%;
-      width: auto;
-      margin-top: 20%;
-      padding: 16px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
-    
-    /* Position the "next button" to the right */
-    .next {
-      right: 20%;
-      border-radius: 3px 0 0 3px;
-    }
-    
-    .prev {
-        left: 20%;
-        border-radius: 3px 0 0 3px;
+           
+            
+        }
+      
       }
-    
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover, .next:hover {
-      background-color: rgba(0,0,0,0.8);
+
+
+    }
+
+
+
+  
+ ///////////////////FORMAT MOBILE ETUDIANTS///////////////////////////////////
+    @include mobile {
+
+        .fleche {
+            display: none;
+        }
+
+
+        body.custom-background
+          {
+            background-image: url(http://localhost:8888/siteSab/wp-content/uploads/2021/11/260016931_167694788879969_9089349859362275267_n.png);
+          }
+
+
+        .conteneurE{
+          display: block;
+          margin: 0 auto;
+          margin-bottom: 10%;
+          margin-top: 5%;
+          justify-content: center;
+          width:70%;
+          overflow-y: scroll;
+          background-color: rgba(165, 165, 165, 0.35);
+        
+          border-radius: 30px;
+              .caroussel{
+                  display: grid;
+                  grid-template-columns:   auto auto auto auto auto auto auto auto;
+                  //width: 100% ;
+                  margin: 0 auto;
+                  
+                  .conteneur1{
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                     position: relative;
+                     width: 65vw;
+                     justify-content: space-between;
+                    
+                      .info
+                      {
+                          width: 100%;
+                          padding: 40px;
+          
+                         p{
+                             position: absolute;
+                         }
+                         h1{
+                             position: absolute;
+                             text-align: center;
+                             width: 65%;
+                             font-size: .8em;
+                             bottom: 20%;
+                             overflow-wrap: break-word;
+                             visibility: hidden;
+                         }
+                         img{
+                             width: 100%;
+                             border-radius: 30px;
+                             
+                         }
+                      }
+                   
+                  }
+                 
+                  
+              } 
+
+       
+    }
     }
     
-    /* Caption text */
-    .text {
-      color: #f2f2f2;
-      font-size: 15px;
-      padding: 8px 12px;
-      position: absolute;
-      bottom: 8px;
-      width: 100%;
-      text-align: center;
-    }
-    
-    /* Number text (1/3 etc) */
-    .numbertext {
-      color: #f2f2f2;
-      font-size: 12px;
-      padding: 8px 12px;
-      position: absolute;
-      top: 0;
-    }
-    
-    /* The dots/bullets/indicators */
-    .dot {
-      cursor: pointer;
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-    }
-    
-    .active, .dot:hover {
-      background-color: #717171;
-    }
-    
-    /* Fading animation */
-    .fade {
-      -webkit-animation-name: fade;
-      -webkit-animation-duration: 1.5s;
-      animation-name: fade;
-      animation-duration: 1.5s;
-    }
-    
-    @-webkit-keyframes fade {
-      from {opacity: .4}
-      to {opacity: 1}
-    }
-    
-    @keyframes fade {
-      from {opacity: .4}
-      to {opacity: 1}
-    }
-    
-    
+ 
+///////////HOVER CONTENU TOUT FORMATS /////////////////////////////////////////
+
+
     .conteneurE:hover {
         transform: translateY(0);
         box-shadow:
@@ -215,7 +223,9 @@
             0 0 50px #fff,
             -10px 0 80px #f0f,
             10px 0 80px #0ff;
+
+          
     }
-
-
+    
    
+    

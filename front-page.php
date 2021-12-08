@@ -15,16 +15,6 @@
 get_header();
 ?>
 
-<div class="glitch glitch--style-1">
-	<div class="glitch__img" > <?php  ?> </div>
-	<div class="glitch__img" ><?php get_background_image() ?></div>
-	<div class="glitch__img" ><?php get_background_image() ?></div>
-	<div class="glitch__img" ><?php get_background_image() ?></div>
-	<div class="glitch__img" ><?php get_background_image() ?></div>
-</div>
-
-
-
 
 	</main><!-- #main -->
 

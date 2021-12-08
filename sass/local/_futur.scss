@@ -1,48 +1,297 @@
-/*.futur-stage  {
-    figure {
-        border-radius: 20px;
+
+/////////////////////////////////////FORMAT DESKTOP///////////////////////////////////////////////////////
+@include desktop{
+.conteneurFutur{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    width: 70%;
+
+    margin-bottom: 10%;
+    margin-top: 5%;
+    overflow-x: scroll;
+    background-color: rgba(165, 165, 165, 0.35);
+    border-radius: 30px;
+.texteFutur{
+
+
+font-size: 1rem;
+
+ 
+
+
+
+.entry-content {
+    width: 70%;
+    padding: 2%;
+    margin-bottom: 10%;
+
+}
+
+
+
+
+#post-865{
+    width:90%;
+    background-color: rgba(165, 165, 165, 0.35);
+    margin-top: 5%;
+    border-radius: 30px;
+    padding:5px;
+    text-align: justify;
+}
+
+
+
+#post-862{
+    width:90%;
+    background-color: rgba(165, 165, 165, 0.35);
+    margin-top: 10%;
+    border-radius: 30px;
+    padding:5px;
+    text-align: justify;
+}
+
+
+
+#post-860{
+
+    width:90%;
+    background-color: rgba(165, 165, 165, 0.35);
+    margin-top: 10%;
+    border-radius: 30px;
+    padding:5px;
+    text-align: justify;
+
+}
+
+
+
+
+
+
+.entry-futur a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 1px 3px 0 #6f0ae2, 1px 13px 5px #6f0ae2;
+}
+
+
+
+
+}
+}
+
+/////////////////////////////FORMAT TABLETTE////////////////////////////////////////
+
+@include tablet{
+    .conteneurFutur{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: center;
+        width: 70%;
+    
+        margin-bottom: 10%;
+        margin-top: 5%;
+        overflow-x: scroll;
+        background-color: rgba(165, 165, 165, 0.35);
+        border-radius: 30px;
+    .texteFutur{
+    
+        font-size: 1rem;
+        width:85%;
+        justify-content: center;
+        margin:0 auto;
+        margin-top: 5%;
+        
+    
     }
-}
-*/
-/*
-ul.liste li {
-    font-family: oxanium;
-    /* margin-left: -20%; 
-    text-align: left;
-    justify-content: left;
-}*/
+    
+    
+    
+    #post-865{
+        width:90%;
+        background-color: rgba(165, 165, 165, 0.35);
+        margin-top: 5%;
+        border-radius: 30px;
+        padding:5px;
+        text-align: justify;
+    }
+    
+    
+    
+    #post-862{
+        width:90%;
+        background-color: rgba(165, 165, 165, 0.35);
+        margin-top: 10%;
+        border-radius: 30px;
+        padding:5px;
+        text-align: justify;
+    }
+    
+    
+    
+    #post-860{
+    
+        width:90%;
+        background-color: rgba(165, 165, 165, 0.35);
+        margin-top: 10%;
+        border-radius: 30px;
+        padding:5px;
+        text-align: justify;
+    
+    }
+    
+    
+    
+    
+    .entry-futur a{
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        text-shadow: 1px 3px 0 #6f0ae2, 1px 13px 5px #6f0ae2;
+    }
+    
+    
+    
+    
+    }
+    }
 
-/*a {
-    text-decoration: underline;
-    color: #d3e2ff;
+
+/////////////////////////////FORMAT MOBILE////////////////////////////////////////
+
+@include mobile{
+    .conteneurFutur{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: center;
+        width: 95%;
+    
+        margin-bottom: 10%;
+        margin-top: 5%;
+        overflow-x: scroll;
+        background-color: rgba(165, 165, 165, 0.35);
+        border-radius: 30px;
+    .texteFutur{
+    
+    
+    font-size: 1rem;
+    width:90%;
+    justify-content: center;
+    margin:0 auto;
+    margin-top: 5%;
+    
+    
+    }
+    
+    
+    
+    #post-865{
+        width:90%;
+        background-color: rgba(165, 165, 165, 0.35);
+        margin-top: 5%;
+        border-radius: 30px;
+        padding:5px;
+        text-align: justify;
+    }
+    
+    
+    
+    #post-862{
+        width:90%;
+        background-color: rgba(165, 165, 165, 0.35);
+        margin-top: 10%;
+        border-radius: 30px;
+        padding:5px;
+        text-align: justify;
+    }
+    
+    
+    
+    #post-860{
+    
+        width:90%;
+        background-color: rgba(165, 165, 165, 0.35);
+        margin-top: 10%;
+        border-radius: 30px;
+        padding:5px;
+        text-align: justify;
+    
+    }
+    
+    
+    
+    
+    .entry-futur a{
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        text-shadow: 1px 3px 0 #6f0ae2, 1px 13px 5px #6f0ae2;
+    }
+    
+    
+    
+    
+    }
+    }
+
+
+
+
+//////////////AFFECTE TOUTES LES PAGES////////////////////////////////////
+
+    .conteneurFutur:hover {
+        transform: translateY(0);
+        box-shadow:
+            inset 0 0 60px whitesmoke,
+            inset 20px 0 80px #f0f,
+            inset -20px 0 80px #0ff,
+            inset 20px 0 300px #f0f,
+            inset -20px 0 300px #0ff,
+            0 0 50px #fff,
+            -10px 0 80px #f0f,
+            10px 0 80px #0ff;
+    }
+
+
+    .captionFutur{
+        border-radius: 30px;
+    }
+
+
+    .texteFutur ul{
+        margin: 0;
+        margin-top:2%;
+        margin-bottom: 2%;
+        font-size: 0.8em;
+    }
+
+  
+@include mobile {
+
 }
 
-a:hover {
-    color: rgb(157, 189, 255);
+
+@include tablet {
+    
 }
 
-.université, .imgUni {
-    border-radius: 20px;
-    ul {
-        figure {
-        border-radius: 20px;
-        }
-    }  
-}
-
-.liste,  .liste li, li a {
-    font-family: oxanium;
-    align-items: left;
-}
-
-.titre {
-    text-decoration: underline;
-}*/
-
-.entry-meta{
-    visibility: hidden;
-}
-
-.entry-footer{
-    visibility: hidden;
-}

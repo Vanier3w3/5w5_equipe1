@@ -27,6 +27,7 @@ get_header();
 					<a id="prev">&#10094;</a>
 					<a id="next">&#10095;</a>
 				</nav>
+
 				
 				<div class="conteneurP">
 				<?php

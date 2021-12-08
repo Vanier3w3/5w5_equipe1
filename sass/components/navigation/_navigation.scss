@@ -59,65 +59,7 @@
 	}
 }
 
-/*li {
-		position: relative;
 
-		/*&:hover > a,
-		&.focus > a {
-		}
-	}*/
-
-/*a {
-		display: block;
-		text-decoration: none;
-		
-	}*/
-
-/*.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a,
-	.current-menu-ancestor > a {
-	}*/
-/*}*/
-
-/* Small menu. */
-/*.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-
-	.menu-toggle {
-		display: none;
-	}
-
-	.main-navigation ul {
-		display: flex;
-	}
-}
-
-.comment-navigation,
-.posts-navigation,
-.post-navigation {
-
-	.site-main & {
-		margin: 0 0 1.5em;
-	}
-
-	.nav-links {
-		display: flex;
-	}
-
-	.nav-previous {
-		flex: 1 0 50%;
-	}
-
-	.nav-next {
-		text-align: end;
-		flex: 1 0 50%;
-	}
-}*/
 
 
 /////////////////////// MON CODE NAV ET TITRE /////////////////////////////
@@ -142,22 +84,6 @@
 
 }
 
-
-.fleche {
-	display: flex;
-	margin-top: 10%;
-	margin-bottom: 10%;
-	justify-content: center;
-	margin-left: 48%;
-	background-color: transparent;
-	border: none;
-	
-}
-.fleche:hover{
-	transform: rotate(180deg);
-
-	
-}
 
 @include mobile
 {
@@ -250,6 +176,7 @@ rotate: rotate(180deg);
 		display: block;
 		text-decoration: none;
 		padding: .5rem;
+		
 	}
 
 
@@ -266,6 +193,8 @@ Bouton burger
 	//	transition : transform .25s;
 	//	transform : rotate(0deg);
 	border: 0;
+
+
 
 
 }
@@ -408,71 +337,54 @@ menu tablet
 	cursor: pointer;
 	display: flex;
 	padding: 0;
+	background:none;
+	
 
 
 }
 
 .line {
 	fill: none;
-	stroke: black;
-	stroke-width: 6;
+	stroke: white;
+	stroke-width: 10;
 	transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
 		stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .line1 {
 	stroke-dasharray: 60 207;
-	stroke-width: 6;
+	stroke-width: 10;
 }
 
 .line2 {
 	stroke-dasharray: 60 60;
-	stroke-width: 6;
+	stroke-width: 10;
 }
 
 .line3 {
 	stroke-dasharray: 60 207;
-	stroke-width: 6;
+	stroke-width: 10;
 }
 
 .opened .line1 {
 	stroke-dasharray: 90 207;
 	stroke-dashoffset: -134;
-	stroke-width: 6;
+	stroke-width: 10;
 }
 
 .opened .line2 {
 	stroke-dasharray: 1 60;
 	stroke-dashoffset: -30;
-	stroke-width: 6;
+	stroke-width: 10;
 }
 
 .opened .line3 {
 	stroke-dasharray: 90 207;
 	stroke-dashoffset: -134;
-	stroke-width: 6;
+	stroke-width: 10;
 }
 
 
-@include mobile {
-	.fleche {
-		display: none;
-	}
-}
-
-@include tablet {
-	#site-navigation button {
-		display: none;
-		background: transparent;
-	}
-}
-
-@include desktop {
-	#site-navigation button {
-		display: none;
-		background: transparent;
-	}
-}
 
 
 
@@ -483,6 +395,9 @@ menu tablet
 	justify-content: center;
 	align-items: center;
 	align-content: center;
+	color: #FFFFFF;
+	text-shadow: 1px 3px 0 #6f0ae2, 1px 13px 5px #6f0ae2;
+	margin-top: 7%;
 }
 
 
@@ -491,4 +406,7 @@ menu tablet
 	justify-content: center;
 	align-items: center;
 	align-content: center;
+	color: #FFFFFF;
+	text-shadow: 1px 3px 0 #6f0ae2, 1px 13px 5px #6f0ae2;
+	margin-top: 7%;
 }
