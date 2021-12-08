@@ -23,7 +23,7 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
+ TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Generic
 	- Normalize
@@ -2027,64 +2027,6 @@ body {
 
 /* futur
 --------------------------------------------- */
-/*.futur-stage  {
-    figure {
-        border-radius: 20px;
-    }
-}
-
-
-ul.liste li {
-    font-family: oxanium;
-    margin-left: -20%; 
-    text-align: left;
-    justify-content: left;
-}
-
-a {
-    text-decoration: underline;
-    color: #d3e2ff;
-}
-
-a:hover {
-    color: rgb(157, 189, 255);
-}
-
-.université, .imgUni {
-    border-radius: 20px;
-    ul {
-        figure {
-        border-radius: 20px;
-        }
-    }  
-}
-
-.liste,  .liste li, li a {
-    font-family: oxanium;
-    align-items: left;
-}
-
-.titre {
-    text-decoration: none;
-    
-}
-
-.entry-meta{
-    visibility: hidden;
-}
-
-.entry-footer{
-    visibility: hidden;
-}
-
-
-.blocks-gallery-item__caption{
-border-radius: 30px;
-}
-
-
-
-
 
 
 
@@ -2272,5 +2214,11 @@ width:90%;
   margin-top: 2%;
   margin-bottom: 2%;
   font-size: 0.8em;
+}
+
+.entry-content {
+  width: 70%;
+  padding: 2%;
+  margin-bottom: 10%;
 }
 /*# sourceMappingURL=style.css.map */
