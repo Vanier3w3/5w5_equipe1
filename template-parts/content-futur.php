@@ -13,9 +13,9 @@
 	<header class="entry-header"> 
 		<?php
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_title( '<h1 class="entry-futur">', '</h1>' );
 		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h2 class="entry-futur"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
 		if ( 'post' === get_post_type() ) :
@@ -29,8 +29,7 @@
 	</header><!-- .entry-header -->
 
 	<?php time1_post_thumbnail(); ?>
-
-	<div class="entry-content">
+	<div class="texteFutur">
 		<?php
 		the_content(
 			sprintf(
@@ -47,13 +46,12 @@
 			)
 		);
 
-		/* wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'time1' ),
-				'after'  => '</div>',
-			)
-		); */
+	
 		?>
+
+
+
+
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

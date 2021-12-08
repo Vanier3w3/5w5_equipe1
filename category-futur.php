@@ -21,6 +21,8 @@ get_header();
 				?>
 			</header><!-- .page-header -->
 			<!-- <div class="entry-content"> -->
+
+			<div class="conteneurFutur">
 			<?php
 			/* Start the Loop */
 			$precedent = 0;
@@ -42,7 +44,7 @@ get_header();
 		?>
 		<!-- </div> -->
 	</main><!-- #main -->
-
+	</div>
 <?php
 get_sidebar();
 get_footer();
