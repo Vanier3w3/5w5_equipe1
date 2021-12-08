@@ -24,9 +24,6 @@ get_header();
 
 <div class="conteneurE">
 
-<a class="prev" onclick="controleFleche(-1)">&#10094;</a>
-  <a class="next" onclick="controleFleche(1)">&#10095;</a>
-
 <div class="caroussel">
 
 <?php
@@ -53,7 +50,10 @@ endif;
 <section class="prof"> 
 
 <div class="imgProf">
-<img src="http://localhost:8888/siteSab/wp-content/uploads/2021/11/Copie_de_Eddy.jpg"></img>
+	
+<img src="http://localhost:8888/siteSab/wp-content/uploads/2021/11/Copie_de_Eddy.jpg"></img> 
+	
+
 <img src="http://localhost:8888/siteSab/wp-content/uploads/2021/11/Copie_de_DSC07728.jpg"></img>
 <img src="http://localhost:8888/siteSab/wp-content/uploads/2021/11/Copie_de_Caroline.jpg"></img>
 <img src="http://localhost:8888/siteSab/wp-content/uploads/2021/11/Copie_de_greg_aout2016.jpg"></img>

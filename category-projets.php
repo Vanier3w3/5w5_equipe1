@@ -24,8 +24,6 @@ get_header();
 		
 			<div class="conteneurP">
 			
-			<a class="prev" onclick="controleFleche(-1)">&#10094;</a>
-  			<a class="next" onclick="controleFleche(1)">&#10095;</a>
 
 			<div class="caroussel">
 			
