@@ -23,14 +23,14 @@ get_header();
 			</header><!-- .page-header -->
 		
 			<div id="contenuPage">
-				<nav class="boutton">
-					<a id="prev">&#10094;</a>
-					<a id="next">&#10095;</a>
-				</nav>
-
 				
+				<div id="grandParent">
 				<div class="conteneurP">
-				<?php
+					<nav class="boutton">
+						<a id="prev">&#10094;</a>
+						<a id="next">&#10095;</a>
+					</nav>
+					<?php
 				$nbPost = 0;
 				$postMax = 12;
 				while ( have_posts() ) :
@@ -55,6 +55,7 @@ get_header();
 
 			endif;
 			?>
+				</div>
 				</div>
 			</div>
 	</main><!-- #main -->

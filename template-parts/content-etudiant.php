@@ -9,10 +9,17 @@
 global $tPropriété;
 
 ?>
+<div class="conteneur1">
+	<div class="info">
+		<?php the_post_thumbnail ('thumbnail'); 
+		echo '<h1>' . get_the_title() . '</h1>';
+		?>
+	</div>
+	<div class="contenu">
+		<!--?php the_content();?-->
+	</div>
 
 
-<div class="conteneurE">
-    <article class="flip-card"id="post-<?php the_ID(); ?>"<?php post_class();?>><div class="flip-card-inner"><div class="flip-card-front"><?php the_post_thumbnail ('thumbnail');
-?></div><div class="flip-card-back"></div></div></article></div>
 
+</div>
 

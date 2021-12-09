@@ -22,17 +22,29 @@ get_header();
 	?>
 </header> <!--.page-header -->
 
-<div class="conteneurE">
-
-<div class="caroussel">
-
-<?php
-
-while ( have_posts() ) :
-	the_post();
-	get_template_part( 'template-parts/content', 'projets' );
+<div id="contenuPage">
+	<div id="grandParent">
 	
-endwhile; ?>
+	<div class="conteneurP">
+		<nav class="boutton">
+			<a id="prev">&#10094;</a>
+			<a id="next">&#10095;</a>
+		</nav>
+		<?php
+				$nbPost = 0;
+				$postMax = 12;
+				while ( have_posts() ) :
+					the_post();
+					if($nbPost == 0){
+						echo '<div class="caroussel">';
+					}
+					++$nbPost;
+					get_template_part( 'template-parts/content', 'etudiant' );
+					if($nbPost == $postMax){
+						$nbPost = 0;
+						echo '</div>';
+					}
+				endwhile; ?>
 
 <?php
 the_posts_navigation();
@@ -43,7 +55,7 @@ else :
 
 endif;
 ?>
-
+	</div>
 </div>	
 </div>
 <h1 class="proff"> Professeurs </h1>
