@@ -8,7 +8,7 @@
  */
 ?>
 
-<div class="conteneur1">
+<div class="conteneur1" id="post-<?php the_ID();?>" >
 	<div class="info">
 		<?php the_post_thumbnail ('thumbnail'); 
 		echo '<h1>' . get_the_title() . '</h1>';

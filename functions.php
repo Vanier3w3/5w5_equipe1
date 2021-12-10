@@ -150,7 +150,9 @@ function time1_scripts() {
 	// code rajouté pour slider
 	wp_register_script( 'time1-slider', get_template_directory_uri() . '/js/slider.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'time1-slider' );
-
+	wp_register_script( 'time1-modal', get_template_directory_uri() . '/js/modal.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'time1-modal' );
+	
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
