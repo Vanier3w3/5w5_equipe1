@@ -206,3 +206,4 @@ add_action( "pre_get_posts", "extraire_article_cours" );
 // add_action( "pre_get_posts", "extraire_projets" );
 
 
+

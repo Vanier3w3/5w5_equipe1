@@ -29,7 +29,7 @@ get_header();
 			
 			while ( have_posts() ) :
 				the_post();
-				get_the_title(); // non fonctionnel
+				get_the_title(); 
                 get_template_part( 'template-parts/content', 'futur' );
 				
 			endwhile;
@@ -46,5 +46,5 @@ get_header();
 	</main><!-- #main -->
 	</div>
 <?php
-get_sidebar();
+
 get_footer();

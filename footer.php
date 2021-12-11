@@ -15,7 +15,7 @@
 
 	<aside id="secondary" class="widget-area">
 	<section id="block-6" class="widget widget_block">
-<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<div class="wp-block-group"><div class="wp-block-group__inner-container1">
 <div class="wp-block-cover has-background-dim"><img loading="lazy" width="1903" height="1061" class="wp-block-cover__image-background wp-image-186" alt="" src="http://eddym8.sg-host.com/wp-content/uploads/2021/11/backGF.png" data-object-fit="cover" srcset="https://eddym8.sg-host.com/wp-content/uploads/2021/11/backGF.png 1903w, https://eddym8.sg-host.com/wp-content/uploads/2021/11/backGF-300x167.png 300w, https://eddym8.sg-host.com/wp-content/uploads/2021/11/backGF-1024x571.png 1024w, https://eddym8.sg-host.com/wp-content/uploads/2021/11/backGF-768x428.png 768w, https://eddym8.sg-host.com/wp-content/uploads/2021/11/backGF-1536x856.png 1536w" sizes="(max-width: 1903px) 100vw, 1903px"><div class="wp-block-cover__inner-container">
 <p><meta charset="utf-8">COMMUNIC@CMAISONNEUVE.QC.CA</p>
 <p><meta charset="utf-8">3800 RUE SHERBROOKE E, MONTRÉAL, QC H1X 2A2</p>
