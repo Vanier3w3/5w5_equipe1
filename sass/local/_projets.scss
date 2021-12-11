@@ -21,12 +21,14 @@
 				position: absolute;
 				flex-direction: row;
 				justify-content: space-between;
+				pointer-events: none;
 				width: 120%;
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%,-50%);
 				
 				a{
+					pointer-events: initial;
 					transition: all 0.5s ease-in-out;
 					padding: 5px;
 					border: transparent 3px solid;
@@ -63,7 +65,6 @@
 					{
 						padding: 8%;
 						width: 100%;
-						
 						p{
 							position: absolute;
 						}
@@ -81,19 +82,39 @@
 							text-shadow: 0 3px 0 #6f0ae2, 0 0.5em 5px #6f0ae2;
 						}
 						img{
+
 							border-radius: 20px;
 							width: 100%;
-							
-						   
-					   }
+						}
 					}
-					.contenu
-					{
-		
+				}			
+				.contenu{
+					display: none;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 97%;
+					height: 95%;
+					border-radius: 20px;
+					background-color: rgba(165, 165, 165, 0.74);
+					z-index: 10;
+					
+					a{
+						position: absolute;
+						top: 5%;
+						right: 5%;
+						font-size: 3em;
+						text-decoration: none;
+						border-radius: 20px;
+						cursor: pointer;
+					}
+
+					&.displayed{
+						display: flex;
+						
 					}
 				}
-			   
-				
 			}
 		  
 			.next {

@@ -35,11 +35,13 @@ get_header();
 				$postMax = 12;
 				while ( have_posts() ) :
 					the_post();
+					
 					if($nbPost == 0){
 						echo '<div class="caroussel">';
 					}
 					++$nbPost;
 					get_template_part( 'template-parts/content', 'projets' );
+					get_template_part( 'template-parts/content', 'projets-desc' );
 					if($nbPost == $postMax){
 						$nbPost = 0;
 						echo '</div>';
