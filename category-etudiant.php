@@ -21,13 +21,16 @@ get_header();
 	//the_archive_description( '<div class="archive-description">', '</div>' );
 	?>
 </header> <!--.page-header -->
+
 <div id="contenuPage">
-				<nav class="boutton">
-					<a id="prev">&#10094;</a>
-					<a id="next">&#10095;</a>
-				</nav>
-<div class="conteneurE">
-			<?php
+	<div id="grandParent">
+	
+	<div class="conteneurP">
+		<nav class="boutton">
+			<a id="prev">&#10094;</a>
+			<a id="next">&#10095;</a>
+		</nav>
+		<?php
 				$nbPost = 0;
 				$postMax = 12;
 				while ( have_posts() ) :
@@ -42,18 +45,18 @@ get_header();
 						echo '</div>';
 					}
 				endwhile; ?>
-						
-						
-			<?php
-				the_posts_navigation();
-				
-				else :
-					
-					get_template_part( 'template-parts/content', 'none' );
 
-			endif;
-			?>
-</div>
+		<?php
+		the_posts_navigation();
+
+		else :
+			
+			get_template_part( 'template-parts/content', 'none' );
+
+		endif;
+		?>
+	</div>
+</div>	
 </div>
 
 </main><!-- #main -->
