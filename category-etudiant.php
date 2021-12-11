@@ -21,65 +21,46 @@ get_header();
 	//the_archive_description( '<div class="archive-description">', '</div>' );
 	?>
 </header> <!--.page-header -->
-
+<div id="contenuPage">
+				<nav class="boutton">
+					<a id="prev">&#10094;</a>
+					<a id="next">&#10095;</a>
+				</nav>
 <div class="conteneurE">
+			<?php
+				$nbPost = 0;
+				$postMax = 12;
+				while ( have_posts() ) :
+					the_post();
+					if($nbPost == 0){
+						echo '<div class="caroussel">';
+					}
+					++$nbPost;
+					get_template_part( 'template-parts/content', 'etudiant' );
+					if($nbPost == $postMax){
+						$nbPost = 0;
+						echo '</div>';
+					}
+				endwhile; ?>
+						
+						
+			<?php
+				the_posts_navigation();
+				
+				else :
+					
+					get_template_part( 'template-parts/content', 'none' );
 
-<div class="caroussel">
-
-<?php
-
-while ( have_posts() ) :
-	the_post();
-	get_template_part( 'template-parts/content', 'projets' );
-	
-endwhile; ?>
-
-<?php
-the_posts_navigation();
-
-else :
-	
-	get_template_part( 'template-parts/content', 'none' );
-
-endif;
-?>
-
-</div>	
+			endif;
+			?>
 </div>
-<h1 class="proff"> Professeurs </h1>
-<section class="prof"> 
+</div>
 
-<div class="imgProf">
-	
-<img src="http://localhost:8888/siteSab/wp-content/uploads/2021/11/Copie_de_Eddy.jpg"></img> 
-	
-
-<img src="http://localhost:8888/siteSab/wp-content/uploads/2021/11/Copie_de_DSC07728.jpg"></img>
-<img src="http://localhost:8888/siteSab/wp-content/uploads/2021/11/Copie_de_Caroline.jpg"></img>
-<img src="http://localhost:8888/siteSab/wp-content/uploads/2021/11/Copie_de_greg_aout2016.jpg"></img>
-<img src="http://localhost:8888/siteSab/wp-content/uploads/2021/11/Copie_de_Denis.jpg"></img>
-<img src="http://localhost:8888/siteSab/wp-content/uploads/2021/11/Copie_de_Mathieu.jpg"></img>
-<img src="http://localhost:8888/siteSab/wp-content/uploads/2021/11/Copie_de_Martin.jpg"></img>
-<img src="http://localhost:8888/siteSab/wp-content/uploads/2021/12/MicrosoftTeams-image-8-scaled-e1638380616930.jpg"></img>
-<img src="http://localhost:8888/siteSab/wp-content/uploads/2021/11/Manon.jpg"></img>
-<img src="http://localhost:8888/siteSab/wp-content/uploads/2021/11/Copie_de_camille.jpg"></img>
-<img src="http://localhost:8888/siteSab/wp-content/uploads/2021/11/Copie_de_Dom.jpg"></img>
-<img src="http://localhost:8888/siteSab/wp-content/uploads/2021/11/Copie_de_DSC07716.jpg"></img>
-<img src="http://localhost:8888/siteSab/wp-content/uploads/2021/12/MicrosoftTeams-image-7-scaled-e1638380491700.jpg"></img>
-<img src="http://localhost:8888/siteSab/wp-content/uploads/2021/11/Copie_de_johanne-gd.jpg"></img>
-<img src="http://localhost:8888/siteSab/wp-content/uploads/2021/11/Ahmed_photo.jpg"></img>
-
-</section>
+</main><!-- #main -->
+<h1 class="proff"> Professeurs</h1>
 
 
 
-</main> <!--#main -->
-
-
-
-
-   </div>
- 
 
 
 
