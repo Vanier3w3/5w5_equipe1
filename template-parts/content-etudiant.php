@@ -8,31 +8,11 @@
  * @package time1
  */
 ?>
-<div class="conteneur1">
+<div class="conteneur1" id="<?php the_id() ;?>">
 	<div class="info">
 		<?php the_post_thumbnail ('thumbnail'); 
 		echo '<h1>' . get_the_title() . '</h1>';
 		?>
 	</div>
-	<div class="contenu">
-		<!--?php the_content();?-->
-	</div>
-
-<div class="conteneur1">
-	<div class="info">
-		<?php the_post_thumbnail ('thumbnail'); 
-		echo '<h1>' . get_the_title() . '</h1>';
-		?>
-	</div>
-	<div class="contenu">
-		<!--?php the_content();?-->
-	</div>
-
-
-
-</div>
-
-
-
 </div>
 
