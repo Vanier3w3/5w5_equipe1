@@ -136,31 +136,32 @@
 							height: 100%;
 							grid-template-columns: 1fr 1fr;
 							grid-template-areas: 
-								"title title"
-								"image text";
+							"title title"
+							"image text";
 							gap: 5%;
-
+							
 							h2{
 								text-align: center;
 								justify-self: center;
 								text-shadow: 0 3px 0 #6f0ae2, 0 0.5em 5px #6f0ae2;
 								grid-area: title;
 							}
-
+							
 							img{
 								grid-area: image;
 								width: 100%;
 							}
-
+							
 							p{
 								grid-area: text;
-
+								
 							}
 						}
+
 					}
 				}
 			}
-		  
+			
 		}
 	}
 	
@@ -229,6 +230,10 @@
 								"title title"
 								"image image"
 								"text text";
+							}
+													
+							&.etudiant{
+								display: none;
 							}
 						}
 					}

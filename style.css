@@ -1527,6 +1527,9 @@ p {
     height: 70vh;
     grid-template-areas: "title title" "image image" "text text";
   }
+  #contenuPage #grandParent .conteneurP .caroussel .contenu.displayed.etudiant {
+    display: none;
+  }
 }
 
 .conteneurP:hover {
