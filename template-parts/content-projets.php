@@ -12,7 +12,6 @@
 	<div class="info">
 		<?php the_post_thumbnail ('thumbnail'); 
 		echo '<h1>' . get_the_title() . '</h1>';
-		echo '<h1>' . get_field('type_de_cours') . '</h1>';
 		?>
 	</div>
 </div>
