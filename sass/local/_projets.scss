@@ -46,7 +46,7 @@
 			.caroussel{
 				display: grid;
 				position: relative;
-				grid-template-columns: auto auto auto auto;
+				grid-template-columns: 17.5vw 17.5vw 17.5vw 17.5vw;
 				grid-template-rows: calc(100%/3) calc(100%/3) calc(100%/3);
 				width: 100%;
 				justify-content: center;
@@ -69,22 +69,28 @@
 							position: absolute;
 						}
 						h1{
+							transition: opacity 1s ease-in-out;	
+							opacity: 0;
 							position: absolute;
 							margin: 0;
 							text-align: center;
 							width: 100%;
 							padding: 10%;
 							font-size: 1.2rem;
-							overflow-wrap: break-word;
 							top: 50%;
 							left: 50%;
 							transform: translate(-50%, -50%);
 							text-shadow: 0 3px 0 #6f0ae2, 0 0.5em 5px #6f0ae2;
 						}
+
 						img{
 
 							border-radius: 20px;
 							width: 100%;
+						}
+
+						&:hover h1{
+							opacity: 1;
 						}
 					}
 				}			
@@ -101,8 +107,9 @@
 					z-index: 10;
 					
 					a{
+						z-index: 100;
 						position: absolute;
-						top: 5%;
+						top: 2%;
 						right: 5%;
 						font-size: 3em;
 						text-decoration: none;
@@ -111,24 +118,60 @@
 					}
 
 					&.displayed{
-						display: flex;
+						display: block;
+						padding: 10px;
+
+						span img{
+							position: absolute;
+							height: 100%;
+							width: auto;
+							top: 50%;
+							left: 50%;
+							border-radius: 20px;
+							transform: translate(-50%, -50%);
+						}
 						
+						div{
+							display: grid;
+							height: 100%;
+							grid-template-columns: 1fr 1fr;
+							grid-template-areas: 
+								"title title"
+								"image text";
+							gap: 5%;
+
+							h2{
+								text-align: center;
+								justify-self: center;
+								text-shadow: 0 3px 0 #6f0ae2, 0 0.5em 5px #6f0ae2;
+								grid-area: title;
+							}
+
+							img{
+								grid-area: image;
+								width: 100%;
+							}
+
+							p{
+								grid-area: text;
+
+							}
+						}
 					}
 				}
 			}
 		  
-			.next {
-				visibility: hidden;
-			}
-			.prev {
-				visibility: hidden;
-			}
 		}
 	}
 	
 }
 
 @include mobile{
+	#next,
+	#prev {
+		visibility: hidden;
+	}
+
 	#contenuPage{
 		#grandParent{
 			width: 90%;			
@@ -139,12 +182,12 @@
 
 			.conteneurP{
 				flex-direction: column ;
+				height: 80vh;
 
 				.caroussel{
 					display: flex;
-					flex-wrap: wrap;
 					flex-direction: column;
-					transform: translateX(0) !important;
+					transform: translateX(0) ;
 							
 					.conteneur1{
 						width: 100%;
@@ -155,6 +198,37 @@
 							}
 							h1{
 								font-size: 2em;
+							}
+							&:focus h1{
+								opacity: 0;
+							}
+						}
+
+					}
+					.contenu{
+						position: relative;
+						top: 0;
+						left:0;
+						height: 70vh;
+						transform: translate(0, -70%);	
+						
+						&.displayed{
+							span img{
+								position: absolute;
+								top: 0;
+								left: 0;
+								transform: translate(0, 0);	
+								height: auto;
+								width: 100%;
+							}
+
+							div{
+
+								height: 70vh;
+								grid-template-areas: 
+								"title title"
+								"image image"
+								"text text";
 							}
 						}
 					}
