@@ -15,6 +15,7 @@
 		?>
 	</div>
 	<div class="contenu" id="desc-<?php the_ID();?>">
+		<a class="close">&#9746;</a>
 		<div>
 			<?php
 			echo "<h2>" . get_the_title() . "</h2>"; 
