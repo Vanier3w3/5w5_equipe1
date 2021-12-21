@@ -14,4 +14,13 @@
 		echo '<h1>' . get_the_title() . '</h1>';
 		?>
 	</div>
+	<div class="contenu" id="desc-<?php the_ID();?>">
+		<div>
+			<?php
+			echo "<h2>" . get_the_title() . "</h2>"; 
+			the_post_thumbnail("large");
+			echo  get_the_content() ?>
+		</div>
+	</div>
+
 </div>

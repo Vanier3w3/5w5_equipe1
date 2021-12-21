@@ -10,7 +10,10 @@
 				if(index > 0){
 					elmCaroussel.style.transform = 'translateX(' + (index*-100 + 100) + '%)';
 					index--
-					console.log(index)
+				}
+				else{
+					elmCaroussel.style.transform = 'translateX(' + (maxIndex*-100) + '%)';
+					index = maxIndex;
 				}
 			})
 			
@@ -19,6 +22,10 @@
 					elmCaroussel.style.transform = 'translateX(' + (index*-100 -100) + '%)'
 					index++
 					console.log(index)
+				}
+				else{
+					elmCaroussel.style.transform = 'translateX(0%)'
+					index = 0
 				}
 			})
 		}

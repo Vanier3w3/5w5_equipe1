@@ -12,7 +12,7 @@
         width: 70%;
         border-radius: 30px;
         margin: 3% 0;
-        background-color: rgba(165, 165, 165, 0.507);
+        background-color: rgba(165, 165, 165, 0.877);
         
         &:hover,
         &:focus{
@@ -30,6 +30,8 @@
         
         h1{
             margin-bottom: 1em;
+            text-shadow: 0 3px 0 #6f0ae2, 0 0.5em 5px #6f0ae2;
+
         }
         
         .fleche_cours{
@@ -52,10 +54,12 @@
                 justify-content: center;
                 width: 40%;
                 padding: 0 5%;
+                border: solid 2px #6f0ae2;
                 border-radius: 15px;
-                background-color: rgba(165, 165, 165, 0.507);
+                background-color: rgb(255, 255, 255);
                 position: relative;
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                color: #460096;
 
                 
                 .infoCours{
@@ -79,16 +83,16 @@
                     display: block;
                     position: absolute;
                     top: -10000px;
-                    padding: 5%;           
+                    padding: 2% 10%;           
                     p{
-                        font-size: 0.5em;
+                        font-size: 0.8em;
                     }
                 }
 
                 &:hover{
                     transform: scale(1.5);
+                    z-index: 100;
                     overflow-y: scroll;
-                    background-color: rgb(165, 165, 165);
                     .infoCours{
                         opacity: 0;
                     }
@@ -122,6 +126,9 @@
 
                 article{
                     width: 100%;
+                    .contenu_cours p{
+                        font-size: 1em;
+                    }
                     &:hover{
                         transform: scale(1);
                         width: 100%;
