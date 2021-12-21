@@ -42,7 +42,6 @@ get_header();
 					}
 					++$nbPost;
 					get_template_part( 'template-parts/content', 'projets' );
-					get_template_part( 'template-parts/content', 'projets-desc' );
 					if($nbPost == $postMax){
 						$nbPost = 0;
 						echo '</div>';

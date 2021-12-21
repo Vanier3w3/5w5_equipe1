@@ -40,7 +40,6 @@ get_header();
 					}
 					++$nbPost;
 					get_template_part( 'template-parts/content', 'etudiant' );
-					get_template_part( 'template-parts/content', 'etudiants-desc' );
 					if($nbPost == $postMax){
 						$nbPost = 0;
 						echo '</div>';

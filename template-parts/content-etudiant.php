@@ -14,5 +14,9 @@
 		
 		?>
 	</div>
+	<div class="contenu etudiant" id="desc-<?php the_ID();?>">
+		<a class="close">&#9746;</a>
+		<span><?php the_post_thumbnail("large");?></span>
+	</div>
 </div>
 
