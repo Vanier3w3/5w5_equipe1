@@ -152,6 +152,11 @@ function time1_scripts() {
 	wp_enqueue_script( 'time1-slider' );
 	wp_register_script( 'time1-modal', get_template_directory_uri() . '/js/modal.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'time1-modal' );
+
+
+	wp_register_script( 'time1-robot', get_template_directory_uri() . '/js/robot.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'time1-robot' );
+
 	
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -159,6 +164,9 @@ function time1_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'time1_scripts' );
+
+
+
 
 /**
  * Implement the Custom Header feature.

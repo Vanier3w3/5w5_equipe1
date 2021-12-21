@@ -85,7 +85,9 @@
                     top: -10000px;
                     padding: 2% 10%;           
                     p{
-                        font-size: 0.8em;
+
+                        font-size: 1em;
+
                     }
                 }
 
@@ -107,7 +109,8 @@
 
     @include mobile {
         body.custom-background{
-            background-image: url(http://localhost:8888/siteSab/wp-content/uploads/2021/11/260016931_167694788879969_9089349859362275267_n.png);
+            background-image: url(http://eddym8.sg-host.com/wp-content/uploads/2021/12/260016931_167694788879969_9089349859362275267_n-261x1024-1.png);
+           // background-image: url(http://localhost:8888/siteSab/wp-content/uploads/2021/11/260016931_167694788879969_9089349859362275267_n.png);
         }
         .sessionBloc{
             width: 90%;
