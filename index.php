@@ -15,7 +15,8 @@
 get_header();
 ?>
  <link rel="shortcut icon" href="https://tympanus.net/Tutorials/CSSGlitchEffect/favicon.ico">
-		
+ <link rel="stylesheet" href="https://use.typekit.net/zlg2tzi.css">
+ 
 	<main id="primary" class="site-main">
 	
 

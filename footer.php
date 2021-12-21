@@ -10,7 +10,10 @@
  */
 
 ?>
+	
 
+
+	<!--
 	<footer id="colophon" class="site-footer">
 
 	<aside id="secondary" class="widget-area">
@@ -20,6 +23,8 @@
 <p><meta charset="utf-8">COMMUNIC@CMAISONNEUVE.QC.CA</p>
 <p><meta charset="utf-8">3800 RUE SHERBROOKE E, MONTRÉAL, QC H1X 2A2</p>
 <p><meta charset="utf-8">(514) 254-7131</p>
+
+
 
 
 
@@ -33,11 +38,61 @@
 
 </section></aside>
 
-	</footer><!-- #colophon -->
+	</footer>--><!-- #colophon -->
 	
-</div><!-- #page -->
+<!--</div>-->
+<footer>
+	<div class="content" >
+	<div class="wp-block-cover has-background-dim"><img loading="lazy" width="1903" height="1061" class="wp-block-cover__image-background wp-image-186" alt="" src="http://eddym8.sg-host.com/wp-content/uploads/2021/11/backGF.png" data-object-fit="cover" srcset="https://eddym8.sg-host.com/wp-content/uploads/2021/11/backGF.png 1903w, https://eddym8.sg-host.com/wp-content/uploads/2021/11/backGF-300x167.png 300w, https://eddym8.sg-host.com/wp-content/uploads/2021/11/backGF-1024x571.png 1024w, https://eddym8.sg-host.com/wp-content/uploads/2021/11/backGF-768x428.png 768w, https://eddym8.sg-host.com/wp-content/uploads/2021/11/backGF-1536x856.png 1536w" sizes="(max-width: 1903px) 100vw, 1903px"><div class="wp-block-cover__inner-container">
+	
+		<div class="link-boxes">
+		
+			<ul class="box">
+				<li class="link_name">Développeurs</li>
+				<li><a href="#">Alexandre Vanier</a></li>
+				<li><a href="#">Sabrine Cheurfa</a></li>
+				<li><a href="#">Alice Botella Vigneault</a></li>
+			
+			</ul>
+
+			<ul class="box">
+				<li class="link_name">Contact</li>
+				<li><a href="#">(514) 254-7131</a></li>
+				<li><a href="#">3800 RUE SHERBROOKE E, MONTRÉAL, QC H1X 2A2</a></li>
+				<li><a href="#">COMMUNIC@CMAISONNEUVE.QC.CA</a></li>
+				
+			
+			</ul>
+			<ul class="box">
+				<li class="link_name">Liens</li>
+				<div class="media-icons">
+				
+				<a href="https://www.facebook.com/maisonneuvetim/" aria-label="Facebook&nbsp;: https://www.facebook.com/maisonneuvetim/" target="_blank" class="wp-block-social-link-anchor"><img src="http://eddym8.sg-host.com/wp-content/uploads/2021/12/facebook-2.png" width="50" height="50"></img></a> 
+				<a href="https://www.instagram.com/maisonneuvetim/?hl=fr" aria-label="Instagram&nbsp;: https://www.instagram.com/maisonneuvetim/?hl=fr" target="_blank" class="wp-block-social-link-anchor"> <img src="http://eddym8.sg-host.com/wp-content/uploads/2021/12/instagram.png" width="50" height="50"></img></a>
+				<a href="https://www.youtube.com/channel/UCFbzVrYpbJOaOW8ub9NiAOA" aria-label="YouTube&nbsp;: https://www.youtube.com/channel/UCFbzVrYpbJOaOW8ub9NiAOA" target="_blank"  class="wp-block-social-link-anchor"> <img src="http://eddym8.sg-host.com/wp-content/uploads/2021/12/youtube.png" width="50" height="50"></img></a> 
+				</div>
+			</ul>
+			
+			
+			</div>
+			<div class="bottom">
+			<div class="logo-details">
+				<img class="imgL" src="http://eddym8.sg-host.com/wp-content/uploads/2021/12/logoTIM2-e1639952951924.png"></img>
+			</div>
+		</div>
+		
+	</div>
+
+          
+  
+      </div>
+    </div>
+</div>
+</footer>
+<!-- #page -->
 
 <?php wp_footer(); ?>
 
 </body>
 </html>
+

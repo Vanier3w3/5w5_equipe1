@@ -17,7 +17,7 @@ get_header();
 	<?php
 	
 
-	echo '<h1 class="titleE"> Vie étudiante </h1>'; 
+	echo '<h1 class="titleE"> VIE ÉTUDIANTE </h1>'; 
 	//the_archive_description( '<div class="archive-description">', '</div>' );
 	?>
 </header> <!--.page-header -->

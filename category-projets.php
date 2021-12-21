@@ -17,7 +17,8 @@ get_header();
 
 			<header class="page-header">
 				<?php
-				echo '<h1 class="titleP"> Projets </h1>'; 
+				echo '<h1 class="titleE"> PROJETS </h1>'; 
+				
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
